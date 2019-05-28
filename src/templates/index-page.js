@@ -5,7 +5,8 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-
+import willsGuitar from "../img/will-guitar.png";
+import ilyasGuitar from "../img/ilya-guitar.png";
 export const IndexPageTemplate = ({
   image,
   title,
@@ -17,6 +18,8 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <h1>BAIRD GUITARS</h1>
+    <img src={willsGuitar} alt="Will's Guitar" />
+    <img src={ilyasGuitar} alt="Ilya's Guitar" />
   </div>
 );
 
