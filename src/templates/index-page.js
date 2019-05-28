@@ -3,10 +3,26 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
+
+import Grid from "../components/Grid.js";
 import willsGuitar from "../img/will-guitar.png";
 import ilyasGuitar from "../img/ilya-guitar.png";
+import nickysGuitar from "../img/nicky-guitar.png";
+import maxsGuitar from "../img/max-guitar.png";
+import blueGuitar from "../img/blue-boy.png";
+import goodGuitar from "../img/good-one.png";
+
+const flexboxStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexWrap: "wrap"
+};
+
+const imageStyle = {
+  width: "33%",
+  display: "inline-block"
+};
 export const IndexPageTemplate = ({
   image,
   title,
@@ -18,8 +34,14 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <h1>BAIRD GUITARS</h1>
-    <img src={willsGuitar} alt="Will's Guitar" />
-    <img src={ilyasGuitar} alt="Ilya's Guitar" />
+    <div style={flexboxStyle}>
+      <img src={blueGuitar} style={imageStyle} alt="Blue Guitar Guitar" />
+      <img src={ilyasGuitar} style={imageStyle} alt="Ilya's Guitar" />
+      <img src={goodGuitar} style={imageStyle} alt="Good Guitar" />
+      <img src={nickysGuitar} style={imageStyle} alt="Nicky's Guitar" />
+      <img src={maxsGuitar} style={imageStyle} alt="Max's Guitar" />
+      <img src={willsGuitar} style={imageStyle} alt="Will's Guitar" />
+    </div>
   </div>
 );
 
