@@ -34,6 +34,9 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <h1>BAIRD GUITARS</h1>
+    <h2>
+      Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
+    </h2>
     <div style={flexboxStyle}>
       <img src={blueGuitar} style={imageStyle} alt="Blue Guitar Guitar" />
       <img src={ilyasGuitar} style={imageStyle} alt="Ilya's Guitar" />
