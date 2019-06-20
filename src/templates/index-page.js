@@ -23,15 +23,7 @@ const imageStyle = {
   width: "33%",
   display: "inline-block"
 };
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro
-}) => (
+export const IndexPageTemplate = ({ heading, subheading, galleryImages }) => (
   <div>
     <h1>BAIRD GUITARS</h1>
     <h2>
@@ -92,8 +84,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
+        images {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
@@ -104,21 +95,6 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
           description
         }
       }
