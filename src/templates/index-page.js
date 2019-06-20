@@ -21,13 +21,12 @@ const imageStyle = {
   width: "33%",
   display: "inline-block"
 };
-export const IndexPageTemplate = ({ heading, subheading, galleryImages }) => (
+export const IndexPageTemplate = ({ heading, galleryImages }) => (
   <div>
     <h1>{heading}</h1>
-    <h2>{subheading}</h2>
-    <h3>
+    <h2>
       Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
-    </h3>
+    </h2>
     <div style={flexboxStyle}>
       <img src={blueGuitar} style={imageStyle} alt="Blue Guitar Guitar" />
       <img src={ilyasGuitar} style={imageStyle} alt="Ilya's Guitar" />
@@ -41,8 +40,7 @@ export const IndexPageTemplate = ({ heading, subheading, galleryImages }) => (
 
 IndexPageTemplate.propTypes = {
   // galleryImages: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  heading: PropTypes.string,
-  subheading: PropTypes.string
+  heading: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -50,10 +48,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <IndexPageTemplate
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-      />
+      <IndexPageTemplate heading={frontmatter.heading} />
     </Layout>
   );
 };
@@ -73,7 +68,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         heading
-        subheading
       }
     }
   }
