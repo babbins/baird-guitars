@@ -23,10 +23,11 @@ const imageStyle = {
 };
 export const IndexPageTemplate = ({ heading, subheading, galleryImages }) => (
   <div>
-    <h1>BAIRD GUITARS</h1>
-    <h2>
+    <h1>{heading}</h1>
+    <h2>{subheading}</h2>
+    <h3>
       Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
-    </h2>
+    </h3>
     <div style={flexboxStyle}>
       <img src={blueGuitar} style={imageStyle} alt="Blue Guitar Guitar" />
       <img src={ilyasGuitar} style={imageStyle} alt="Ilya's Guitar" />
