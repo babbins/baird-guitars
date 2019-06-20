@@ -14,6 +14,6 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Gallery Images, name: "galleryImages", widget: image, allowMultiple: true }
+          - {label: Gallery Images, name: "galleryImages", widget: image, allow_multiple: true }
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}

@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-
-import Grid from "../components/Grid.js";
 import willsGuitar from "../img/will-guitar.png";
 import ilyasGuitar from "../img/ilya-guitar.png";
 import nickysGuitar from "../img/nicky-guitar.png";
@@ -41,15 +39,9 @@ export const IndexPageTemplate = ({ heading, subheading, galleryImages }) => (
 );
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
+  // galleryImages: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+  subheading: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -58,13 +50,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   );
@@ -84,20 +71,15 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        galleryImages {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
       }
     }
   }
 `;
+// galleryImages {
+//   childImageSharp {
+//     fluid(maxWidth: 2048, quality: 100) {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
