@@ -10,7 +10,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       <IndexPageTemplate
         galleryImages={data.image}
         heading={data.heading}
-        subheading={data.subheading}
       />
     );
   } else {
