@@ -1,13 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IndexPageTemplate } from "../../templates/index-page";
+import Layout from "../../components/Layout";
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
     return (
-      <IndexPageTemplate images={data.galleryImages} heading={data.heading} />
+      <Layout>
+        <IndexPageTemplate images={data.galleryImages} heading={data.heading} />
+      </Layout>
     );
   } else {
     return <div>Loading...</div>;
