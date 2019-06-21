@@ -8,9 +8,13 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     return (
+<<<<<<< HEAD
       <Layout>
         <IndexPageTemplate images={data.galleryImages} heading={data.heading} />
       </Layout>
+=======
+      <IndexPageTemplate images={data.galleryImages} heading={data.heading} />
+>>>>>>> ed33220f31c2b0e294a5141b3e0d26438036e9e3
     );
   } else {
     return <div>Loading...</div>;
