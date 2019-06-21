@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import useSiteMetadata from "./SiteMetadata";
-
+import { Global } from "@emotion/core";
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
@@ -41,7 +41,14 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <div>{children}</div>
+      <Global
+        styles={{
+          body: {
+            fontFamily: "Arial"
+          }
+        }}
+      />
+      {children}
     </div>
   );
 };
