@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Gallery from "../components/Gallery";
+import GuitarDetail from "../components/GuitarDetail";
 import mq from "../utils/mediaQueries";
 
 export const IndexPageTemplate = ({ heading, images }) => (
@@ -15,10 +16,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <IndexPageTemplate
-        heading={frontmatter.heading}
-        images={frontmatter.galleryImages}
-      />
+      <GuitarDetail />
     </Layout>
   );
 };

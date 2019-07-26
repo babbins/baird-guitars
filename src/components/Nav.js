@@ -17,7 +17,6 @@ const Nav = ({ heading }) => (
       justify-content: flex-start;
       z-index: 1;
       height: ${NAV_HEIGHT}px;
-
       background-color: #fffaf0;
     `}
   >
