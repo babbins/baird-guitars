@@ -13,9 +13,8 @@ const Gallery = ({ images }) => (
   >
     {images.map(image => (
       <Img
-        f
         css={{
-          width: "100%",
+          width: "85%",
           [mq[0]]: {
             width: "25%"
           }

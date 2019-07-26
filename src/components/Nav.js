@@ -2,7 +2,10 @@ import React from "react";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
 
-export const NAV_HEIGHT = 100;
+export const NAV_HEIGHT = {
+  MOBILE: 80,
+  DESKTOP: 90
+};
 
 const Nav = ({ heading }) => (
   <section
@@ -16,14 +19,20 @@ const Nav = ({ heading }) => (
       flex-direction: column;
       justify-content: flex-start;
       z-index: 1;
-      height: ${NAV_HEIGHT}px;
+      height: ${NAV_HEIGHT.MOBILE}px;
+      ${mq[0]} {
+        height: ${NAV_HEIGHT.DESKTOP}px;
+      }
 
       background-color: #fffaf0;
     `}
   >
     <h1
       css={css`
-        font-size: 50px;
+        font-size: 40px;
+        ${mq[0]} {
+          font-size: 50px;
+        }
       `}
     >
       {heading}

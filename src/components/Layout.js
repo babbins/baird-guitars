@@ -65,9 +65,10 @@ const TemplateWrapper = ({ children }) => {
         css={{
           width: "90%",
           margin: "0 auto",
-          marginTop: NAV_HEIGHT + 10 + "px",
+          marginTop: NAV_HEIGHT.MOBILE + 10 + "px",
           [mq[0]]: {
-            width: "70%"
+            width: "70%",
+            marginTop: NAV_HEIGHT.DESKTOP + 10 + "px"
           },
           position: "relative"
         }}
