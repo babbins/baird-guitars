@@ -5,19 +5,7 @@ import Gallery from "../components/Gallery";
 import mq from "../utils/mediaQueries";
 
 export const IndexPageTemplate = ({ heading, images }) => (
-  <div
-    css={{
-      width: "90%",
-      margin: "0 auto",
-      [mq[0]]: {
-        width: "70%"
-      }
-    }}
-  >
-    <h1>{heading}</h1>
-    <h2>
-      Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
-    </h2>
+  <div>
     <Gallery images={images} />
   </div>
 );

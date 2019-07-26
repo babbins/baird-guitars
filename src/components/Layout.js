@@ -2,6 +2,9 @@ import React from "react";
 import Helmet from "react-helmet";
 import useSiteMetadata from "./SiteMetadata";
 import { Global } from "@emotion/core";
+import Nav from "./Nav.js";
+import mq from "../utils/mediaQueries";
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
@@ -44,11 +47,25 @@ const TemplateWrapper = ({ children }) => {
       <Global
         styles={{
           body: {
-            fontFamily: "Arial"
+            fontFamily: "Arial",
+            backgroundColor: "floralwhite"
           }
         }}
       />
-      {children}
+      <Nav heading="BAIRD GUITARS" />
+      <div
+        css={{
+          width: "90%",
+          margin: "0 auto",
+          marginTop: "50px",
+          [mq[0]]: {
+            width: "70%"
+          },
+          position: "relative"
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 };
