@@ -2,23 +2,32 @@ import React from "react";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
 
+export const NAV_HEIGHT = 100;
+
 const Nav = ({ heading }) => (
   <section
     css={css`
       position: fixed;
       top: 0;
       width: 100%;
-      padding: 10px;
       text-align: center;
-      margin: 0 auto;
+
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: flex-start;
       z-index: 1;
-      margin-bottom: calc(100%);
+      height: ${NAV_HEIGHT}px;
+
+      background-color: #fffaf0;
     `}
   >
-    <h1>{heading}</h1>
+    <h1
+      css={css`
+        font-size: 50px;
+      `}
+    >
+      {heading}
+    </h1>
     <h2>
       Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
     </h2>

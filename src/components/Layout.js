@@ -1,8 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import useSiteMetadata from "./SiteMetadata";
-import { Global } from "@emotion/core";
-import Nav from "./Nav.js";
+import { Global, css } from "@emotion/core";
+import Nav, { NAV_HEIGHT } from "./Nav.js";
 import mq from "../utils/mediaQueries";
 
 const TemplateWrapper = ({ children }) => {
@@ -45,19 +45,27 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <Global
-        styles={{
-          body: {
-            fontFamily: "Arial",
-            backgroundColor: "floralwhite"
+        styles={css`
+          a:visited {
+            color: inherit;
           }
-        }}
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          body {
+            font-family: Arial;
+            background-color: #fffaf0;
+            color: #200000;
+          }
+        `}
       />
       <Nav heading="BAIRD GUITARS" />
       <div
         css={{
           width: "90%",
           margin: "0 auto",
-          marginTop: "50px",
+          marginTop: NAV_HEIGHT + 10 + "px",
           [mq[0]]: {
             width: "70%"
           },

@@ -13,10 +13,11 @@ const Gallery = ({ images }) => (
   >
     {images.map(image => (
       <Img
+        f
         css={{
           width: "100%",
           [mq[0]]: {
-            width: "33%"
+            width: "25%"
           }
         }}
         fluid={image.childImageSharp.fluid}
