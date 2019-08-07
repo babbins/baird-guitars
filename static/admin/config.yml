@@ -6,11 +6,23 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "guitars"
+    label: "Guitars"
+    folder: "src/pages/guitars"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Slug", name: "slug"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: Gallery, name: "galleryImages", widget: list, field: {label: Image, name: image, widget: image}}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/index.md"
-        label: "Homepage"
+      - label: "Homepage"
+        file: "src/pages/index.md"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden"}

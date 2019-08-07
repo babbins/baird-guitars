@@ -6,66 +6,48 @@ import bodyAngled from "../img/blue-body-angled.jpg";
 import body from "../img/blue-body.jpg";
 import mq from "../utils/mediaQueries";
 import ReactImageMagnify from "react-image-magnify";
+import Img from "gatsby-image";
 
 const carouselImages = [headstock, bodyAngled, body];
 
-const settings = {
-  dots: true,
-  dotsClass: "slick-dots slick-thumb",
-  speed: 1,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  customPaging: function(i) {
-    return (
-      <a>
-        <img src={carouselImages[i]} />
-      </a>
-    );
-  }
+const ImageSlider = images => {
+  const settings = {
+    dots: true,
+    dotsClass: "slick-dots slick-thumb",
+    speed: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    customPaging: function(i) {
+      return (
+        <a>
+          <Img
+            fluid={images[i].childImageSharp.fluid}
+            key={images[i].childImageSharp.fluid.src}
+          />
+        </a>
+      );
+    }
+  };
+
+  return (
+    <div>
+      <Slider {...settings}>
+        {images.map(image => (
+          <div
+            css={css`
+              width: 40vw;
+            `}
+          >
+            <Img
+              fluid={image.childImageSharp.fluid}
+              key={image.childImageSharp.fluid.src}
+            />
+            ))}
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
-const ImageSlider = () => (
-  <div>
-    <Slider {...settings}>
-      {carouselImages.map(image => (
-        <div
-          css={css`
-            width: 40vw;
-          `}
-        >
-          {/* <img
-            css={css`
-              width: 100%;
-              ${mq[0]} {
-                height: 60vh;
-                width: auto;
-              }
-            `}
-            src={image}
-          /> */}
-          <ReactImageMagnify
-            {...{
-              smallImage: {
-                src: image,
-                width: 400,
-                height: 400
-              },
-              largeImage: {
-                src: image,
-                width: 1200,
-                height: 1200
-              },
-              lensStyle: { backgroundColor: "rgba(0,0,0,.6)" }
-            }}
-            {...{
-              isHintEnabled: true,
-              shouldHideHintAfterFirstActivation: false,
-              enlargedImagePosition: "beside"
-            }}
-          />
-        </div>
-      ))}
-    </Slider>
-  </div>
-);
 export default ImageSlider;

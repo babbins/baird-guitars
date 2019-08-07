@@ -42,9 +42,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-// galleryImages {
-//   childImageSharp {
-//     fluid(maxWidth: 2048, quality: 100) {
-//       ...GatsbyImageSharpFluid
-//     }
-//   }
