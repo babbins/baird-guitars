@@ -13,7 +13,17 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        />
+        // Add the new slick-theme.css if you want the default styling
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -31,14 +41,12 @@ const TemplateWrapper = ({ children }) => {
           href="/img/favicon-16x16.png"
           sizes="16x16"
         />
-
         <link
           rel="mask-icon"
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
-
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
@@ -49,6 +57,20 @@ const TemplateWrapper = ({ children }) => {
           a:visited {
             color: inherit;
           }
+          .slick-image-gallery {
+            position: static;
+          }
+          .slick-image-gallery li {
+            width: 60px;
+            height: auto;
+            display: inline-block;
+            margin-right: 5px;
+          }
+
+          .slick-image-gallery img {
+            max-width: 100%;
+          }
+
           * {
             margin: 0;
             padding: 0;
@@ -63,7 +85,6 @@ const TemplateWrapper = ({ children }) => {
       <Nav heading="BAIRD GUITARS" />
       <div
         css={{
-          width: "90%",
           margin: "0 auto",
           marginTop: NAV_HEIGHT.MOBILE + 10 + "px",
           [mq[0]]: {
