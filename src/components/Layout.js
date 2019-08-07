@@ -57,19 +57,17 @@ const TemplateWrapper = ({ children }) => {
           a:visited {
             color: inherit;
           }
-
-          .slick-thumb li {
-            width: 60px !important;
-            height auto !important;
+          .slick-image-gallery {
+            position: static;
+          }
+          .slick-image-gallery li {
+            width: 60px;
+            height: auto;
+            display: inline-block;
+            margin-right: 5px;
           }
 
-          .slick-thumb {
-            left: 0 !important;
-            bottom: -70px !important;
-            width: auto !important;
-          }
-
-          .slick-thumb img {
+          .slick-image-gallery img {
             max-width: 100%;
           }
 
@@ -87,12 +85,8 @@ const TemplateWrapper = ({ children }) => {
       <Nav heading="BAIRD GUITARS" />
       <div
         css={{
-          width: "90%",
           margin: "0 auto",
           marginTop: NAV_HEIGHT + 10 + "px",
-          [mq[0]]: {
-            width: "70%"
-          },
           position: "relative"
         }}
       >

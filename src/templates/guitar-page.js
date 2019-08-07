@@ -4,28 +4,57 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import ImageSlider from "../components/IamgeSlider";
+import ImageSlider from "../components/ImageSlider";
+import { css } from "@emotion/core";
+import mq from "../utils/mediaQueries";
 
 export const BlogPostTemplate = ({
+  title,
   content,
   contentComponent,
-  description,
   galleryImages
-  tags,
-  helmet
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <section>
       <div>
-        1
         <div>
-          <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <ImageSlider images={galleryImages} />
-            <PostContent content={content} />
+          <div
+            css={css`
+              display: grid;
+              grid-template-columns: repeat(12, 1fr);
+              grid-column-gap: 50px;
+            `}
+          >
+            <h1
+              css={css`
+                grid-column: 2 / 11;
+                ${mq[0]} {
+                  grid-column: 2 / 6;
+                }
+              `}
+            >
+              {title}
+            </h1>
+            <ImageSlider
+              css={css`
+                grid-column: 2 / 11;
+                ${mq[0]} {
+                  grid-column: 2 / 6;
+                }
+              `}
+              images={galleryImages}
+            />
+            <PostContent
+              css={css`
+                grid-column: 2 / 11;
+                ${mq[0]} {
+                  grid-column: 6 / 12;
+                }
+              `}
+              content={content}
+            />
           </div>
         </div>
       </div>
@@ -53,8 +82,8 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
         title={post.frontmatter.title}
+        galleryImages={post.frontmatter.galleryImages}
       />
     </Layout>
   );

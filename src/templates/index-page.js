@@ -2,11 +2,18 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Gallery from "../components/Gallery";
-import GuitarDetail from "../components/GuitarDetail";
 import mq from "../utils/mediaQueries";
+import { css } from "@emotion/core";
 
 export const IndexPageTemplate = ({ heading, images }) => (
-  <div>
+  <div
+    css={css`
+      width: "90%",
+      ${mq[0]} {
+        width: "70%"
+      },
+    `}
+  >
     <Gallery images={images} />
   </div>
 );
@@ -16,7 +23,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <GuitarDetail />
+      <IndexPageTemplate
+        heading={frontmatter.heading}
+        images={frontmatter.galleryImages}
+      />
     </Layout>
   );
 };
