@@ -1,13 +1,12 @@
 ---
 heading: BAIRD GUITARS
 templateKey: index-page
-galleryImages:
-  - /img/blue-boy-icon.png
-  - /img/ilyas-guit.png
-  - /img/lilas-guit.png
-  - /img/maxs-guit.png
-  - /img/nickys-guit.png
-  - /img/wills-bass.png
-galleryLinks:
-- /guitars/blue-boy
+galleryItems:
+  - image: /img/blue-boy-icon.png
+    url: /guitars/blue-boy
+  - image: /img/ilyas-guit.png
+  - image: /img/lilas-guit.png
+  - image: /img/maxs-guit.png
+  - image: /img/nickys-guit.png
+  - image: /img/wills-bass.png
 ---

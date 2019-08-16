@@ -12,7 +12,7 @@ export const BlogPostTemplate = ({
   title,
   content,
   contentComponent,
-  galleryImages
+  guitarImages
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -44,7 +44,7 @@ export const BlogPostTemplate = ({
                   grid-column: 2 / 6;
                 }
               `}
-              images={galleryImages}
+              images={guitarImages}
             />
             <PostContent
               css={css`
@@ -83,7 +83,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        galleryImages={post.frontmatter.galleryImages}
+        guitarImages={post.frontmatter.guitarImages}
       />
     </Layout>
   );
@@ -104,7 +104,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        galleryImages {
+        guitarImages {
           childImageSharp {
             fluid(maxWidth: 700) {
               src

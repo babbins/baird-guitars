@@ -16,8 +16,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "guitar-page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: Gallery, name: "galleryImages", widget: list, field: {label: Image, name: image, widget: image}}
-      - {label: GalleryLinks, name: "galleryLinks", widget: list, field: {label: URL, name: url, widget: text}}
+      - {label: Gallery, name: "guitarImages", widget: list, field: {label: Image, name: image, widget: image}}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
@@ -28,4 +27,9 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden"}
           - {label: Heading, name: heading, widget: string}
-          - {label: Gallery, name: "galleryImages", widget: list, field: {label: Image, name: image, widget: image}}
+          - label: "Gallery Item"
+            name: "galleryItems"
+            widget: "list"
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: URL, name: url, widget: text}

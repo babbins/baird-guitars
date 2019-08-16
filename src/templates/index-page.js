@@ -5,7 +5,7 @@ import Gallery from "../components/Gallery";
 import mq from "../utils/mediaQueries";
 import { css } from "@emotion/core";
 
-export const IndexPageTemplate = ({ heading, images, links }) => (
+export const IndexPageTemplate = ({ heading, galleryItems, links }) => (
   <div
     css={css`
       width: "90%",
@@ -14,24 +14,17 @@ export const IndexPageTemplate = ({ heading, images, links }) => (
       },
     `}
   >
-    <Gallery images={images} links={links} />
+    <Gallery galleryItems={galleryItems} links={links} />
   </div>
 );
 
 const IndexPage = ({ data }) => {
-  const {
-    heading,
-    galleryLinks,
-    galleryImages
-  } = data.markdownRemark.frontmatter;
+  const { heading, galleryItems } = data.markdownRemark.frontmatter;
+  console.log(data.markdownRemark.frontmatter, "dis da frontmette");
 
   return (
     <Layout>
-      <IndexPageTemplate
-        heading={heading}
-        images={galleryImages}
-        links={galleryLinks}
-      />
+      <IndexPageTemplate heading={heading} galleryItems={galleryItems} />
     </Layout>
   );
 };
@@ -43,16 +36,18 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         heading
-        galleryLinks
-        galleryImages {
-          childImageSharp {
-            fluid(maxWidth: 700) {
-              src
-              aspectRatio
-              srcSet
-              sizes
+        galleryItems {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 700) {
+                src
+                aspectRatio
+                srcSet
+                sizes
+              }
             }
           }
+          url
         }
       }
     }

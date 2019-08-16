@@ -14,7 +14,7 @@ const GalleryItemCss = {
   }
 };
 
-const Gallery = ({ images, links }) => (
+const Gallery = ({ galleryItems, links }) => (
   <div
     css={{
       display: "flex",
@@ -23,13 +23,13 @@ const Gallery = ({ images, links }) => (
       flexWrap: "wrap"
     }}
   >
-    {images.map((image, idx) => {
-      if (links[idx]) {
+    {galleryItems.map(({ image, url }) => {
+      if (url) {
         return (
           <Link
             css={GalleryItemCss}
             key={image.childImageSharp.fluid.src}
-            to={links[idx]}
+            to={url}
           >
             <GalleryImage image={image} />
           </Link>

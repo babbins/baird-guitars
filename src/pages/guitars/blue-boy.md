@@ -1,10 +1,11 @@
 ---
+slug: blue-boy
 templateKey: 'guitar-page'
 title: 'Blue Boy'
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
-galleryImages:
+guitarImages:
   - /img/blue-body.jpg
   - /img/blue-body-angled.jpg
   - /img/blue-headstock.jpg
