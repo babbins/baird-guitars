@@ -8,4 +8,6 @@ galleryImages:
   - /img/maxs-guit.png
   - /img/nickys-guit.png
   - /img/wills-bass.png
+galleryLinks:
+- /guitars/blue-boy
 ---

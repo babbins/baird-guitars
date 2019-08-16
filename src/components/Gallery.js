@@ -1,8 +1,20 @@
 import React from "react";
 import Img from "gatsby-image";
 import mq from "../utils/mediaQueries";
+import { Link } from "gatsby";
 
-const Gallery = ({ images }) => (
+const GalleryImage = ({ image, className }) => (
+  <Img className={className} fluid={image.childImageSharp.fluid} />
+);
+
+const GalleryItemCss = {
+  width: "85%",
+  [mq[0]]: {
+    width: "25%"
+  }
+};
+
+const Gallery = ({ images, links }) => (
   <div
     css={{
       display: "flex",
@@ -11,18 +23,27 @@ const Gallery = ({ images }) => (
       flexWrap: "wrap"
     }}
   >
-    {images.map(image => (
-      <Img
-        css={{
-          width: "85%",
-          [mq[0]]: {
-            width: "25%"
-          }
-        }}
-        fluid={image.childImageSharp.fluid}
-        key={image.childImageSharp.fluid.src}
-      />
-    ))}
+    {images.map((image, idx) => {
+      if (links[idx]) {
+        return (
+          <Link
+            css={GalleryItemCss}
+            key={image.childImageSharp.fluid.src}
+            to={links[idx]}
+          >
+            <GalleryImage image={image} />
+          </Link>
+        );
+      } else {
+        return (
+          <GalleryImage
+            css={GalleryItemCss}
+            key={image.childImageSharp.fluid.src}
+            image={image}
+          />
+        );
+      }
+    })}
   </div>
 );
 
