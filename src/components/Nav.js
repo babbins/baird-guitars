@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
+import { Link } from "gatsby";
 
 export const NAV_HEIGHT = {
   MOBILE: 80,
@@ -14,7 +15,6 @@ const Nav = ({ heading }) => (
       top: 0;
       width: 100%;
       text-align: center;
-
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -23,20 +23,26 @@ const Nav = ({ heading }) => (
       ${mq[0]} {
         height: ${NAV_HEIGHT.DESKTOP}px;
       }
-
       background-color: #fffaf0;
     `}
   >
-    <h1
-      css={css`
-        font-size: 40px;
-        ${mq[0]} {
-          font-size: 50px;
-        }
-      `}
+    <Link
+      css={{
+        textDecoration: "none"
+      }}
+      to="/"
     >
-      {heading}
-    </h1>
+      <h1
+        css={css`
+          font-size: 40px;
+          ${mq[0]} {
+            font-size: 50px;
+          }
+        `}
+      >
+        {heading}
+      </h1>
+    </Link>
     <h2>
       Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
     </h2>
