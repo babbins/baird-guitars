@@ -11,7 +11,7 @@ galleryItems:
   - image: /img/maxs-guit.png
     url: /guitars/
   - image: /img/nickys-guit.png
-    url: /guitars/
+    url: /guitars/nw-1
   - image: /img/wills-bass.png
     url: /guitars/
 ---
