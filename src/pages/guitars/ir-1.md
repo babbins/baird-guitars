@@ -1,7 +1,7 @@
 ---
 slug: ir-1
 templateKey: guitar-page
-title: ir-1
+title: IR-1
 description: ilyaaaaa
 guitarImages:
   - /img/img_3137.jpeg
