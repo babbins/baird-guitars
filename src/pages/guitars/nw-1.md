@@ -6,6 +6,7 @@ description: nickyyyyyyyy
 guitarImages:
   - /img/img_3561.jpg
   - /img/img_3560.jpg
+  - /img/img_3549.jpg
 ---
 **NW-1**
 
