@@ -24,7 +24,7 @@ Hollow body electric fretless
 
 \-Alder top and back with maple sides and mahogany neck and end blocks
 
-\-Wenge fingerboard with port orford cedar neck
+\-Wenge fingerboard with port orford cedar neck, bolt-on
 
 \-Hand cut brass tail piece and bridge
 
