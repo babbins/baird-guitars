@@ -1,7 +1,7 @@
 ---
 slug: nw-1
 templateKey: guitar-page
-title: nw-1
+title: NW-1
 description: nickyyyyyyyy
 guitarImages:
   - /img/img_3561.jpg
