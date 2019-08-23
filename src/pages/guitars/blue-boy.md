@@ -9,6 +9,7 @@ guitarImages:
   - /img/blue-body.jpg
   - /img/blue-body-angled.jpg
   - /img/blue-headstock.jpg
+  - /img/img_3278.jpeg
 ---
 ## BB-1
 
