@@ -15,6 +15,8 @@ Solid body bass
 
 \-hand wound P pick up in the neck position and a hand wound J pick up by the bridge
 
+\-34" scale
+
 \-Bass wood body
 
 \-Rosewood finger board on a maple neck
