@@ -21,6 +21,6 @@ hollow body electric
 
 \-Alder top and back with mahogany sides
 
-\-Padauk fingerboard with maple neck
+\-Padauk fingerboard with maple neck, bolt-on
 
 \-Zebra wood and padauk details
