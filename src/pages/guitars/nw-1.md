@@ -18,4 +18,4 @@ chambered electric
 
 \-One piece mahogany top and sides with a mahogany back
 
-\-Ebony fingerboard with mahogany neck
+\-Ebony fingerboard with bolt-on mahogany neck
