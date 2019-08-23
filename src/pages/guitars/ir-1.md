@@ -10,10 +10,6 @@ guitarImages:
   - /img/img_3140.jpg
   - /img/img_3141.jpg
   - /img/img_3142.jpeg
-  - /img/img_3138.jpg
-  - /img/img_3138.jpg
-  - /img/img_3138.jpg
-  - /img/img_3138.jpg
 ---
 **IR-1**
 
