@@ -7,7 +7,7 @@ galleryItems:
   - image: /img/ilyas-guit.png
     url: /guitars/ir-1
   - image: /img/lilas-guit.png
-    url: /guitars/
+    url: /guitars/lr-1
   - image: /img/maxs-guit.png
     url: /guitars/formybrother
   - image: /img/nickys-guit.png
