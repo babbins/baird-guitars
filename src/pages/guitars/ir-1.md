@@ -17,7 +17,7 @@ hollow body electric
 
 \-Two hand wound humbuckers
 
-\-Fender scale 
+\-25.5" scale 
 
 \-Alder top and back with mahogany sides
 
