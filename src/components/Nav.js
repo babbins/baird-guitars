@@ -19,10 +19,6 @@ const Nav = ({ heading }) => (
       flex-direction: column;
       justify-content: flex-start;
       z-index: 1;
-      height: ${NAV_HEIGHT.MOBILE}px;
-      ${mq[0]} {
-        height: ${NAV_HEIGHT.DESKTOP}px;
-      }
       background-color: #fffaf0;
     `}
   >
@@ -34,7 +30,7 @@ const Nav = ({ heading }) => (
     >
       <h1
         css={css`
-          font-size: 40px;
+          font-size: 35px;
           ${mq[0]} {
             font-size: 80px;
           }
