@@ -103,7 +103,7 @@ const TemplateWrapper = ({ children }) => {
           marginTop: NAV_HEIGHT.MOBILE + 10 + "px",
           [mq[0]]: {
             width: "70%",
-            marginTop: NAV_HEIGHT.DESKTOP + 10 + "px"
+            marginTop: 0
           },
           position: "relative"
         }}

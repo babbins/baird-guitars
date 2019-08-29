@@ -20,6 +20,9 @@ const Nav = ({ heading }) => (
       justify-content: flex-start;
       z-index: 1;
       background-color: #fffaf0;
+      ${mq[0]} {
+        position: static;
+      }
     `}
   >
     <Link
