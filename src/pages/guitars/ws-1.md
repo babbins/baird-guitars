@@ -13,12 +13,12 @@ guitarImages:
 
 Solid body bass
 
-\-hand wound P pick up in the neck position and a hand wound J pick up by the bridge
+- hand wound P pick up in the neck position and a hand wound J pick up by the bridge
 
-\-34" scale
+- 34" scale
 
-\-Bass wood body
+- Bass wood body
 
-\-Rosewood finger board on a maple neck
+- Rosewood finger board on a maple neck
 
-\-hand made zebrawood pick up covers
+- hand made zebrawood pick up covers

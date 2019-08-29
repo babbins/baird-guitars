@@ -16,10 +16,10 @@ guitarImages:
 
 Chambered solid body electric
 
-\-Two hand wound mini humbuckers, later switched to one mini humbucker in the neck position and a normal hand wound humbucker by the bridge
+- Two hand wound mini humbuckers, later switched to one mini humbucker in the neck position and a normal hand wound humbucker by the bridge
 
-\-25.5" scale
+- 25.5" scale
 
-\-Mahogany body
+- Mahogany body
 
-\-Rosewood fingerboard on a maple neck
+- Rosewood fingerboard on a maple neck

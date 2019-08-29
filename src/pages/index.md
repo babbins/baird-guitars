@@ -9,10 +9,9 @@ galleryItems:
   - image: /img/lilas-guit.png
     url: /guitars/lr-1
   - image: /img/maxs-guit.png
-    url: /guitars/formybrother
+    url: /guitars/mb-1
   - image: /img/nickys-guit.png
     url: /guitars/nw-1
   - image: /img/wills-bass.png
     url: /guitars/ws-1
 ---
-

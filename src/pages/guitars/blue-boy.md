@@ -18,14 +18,14 @@ guitarImages:
 
 Hollow body electric fretless
 
-\-Shielded hand wound single coil with hum canceling dummy coil
+- Shielded hand wound single coil with hum canceling dummy coil
 
-\-34" scale
+- 34" scale
 
-\-Alder top and back with maple sides and mahogany neck and end blocks
+- Alder top and back with maple sides and mahogany neck and end blocks
 
-\-Wenge fingerboard with port orford cedar neck, bolt-on
+- Wenge fingerboard with port orford cedar neck, bolt-on
 
-\-Hand cut brass tail piece and bridge
+- Hand cut brass tail piece and bridge
 
-\-Zebra wood and wenge details
+- Zebra wood and wenge details

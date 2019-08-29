@@ -12,10 +12,10 @@ guitarImages:
 
 chambered electric
 
-\-three hand wound humbuckers
+- three hand wound humbuckers
 
-\-24.75" scale
+- 24.75" scale
 
-\-One piece mahogany top and sides with a mahogany back
+- One piece mahogany top and sides with a mahogany back
 
-\-Ebony fingerboard with bolt-on mahogany neck
+- Ebony fingerboard with bolt-on mahogany neck

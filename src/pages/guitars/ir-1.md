@@ -13,14 +13,14 @@ guitarImages:
 ---
 **IR-1**
 
-hollow body electric 
+hollow body electric
 
-\-Two hand wound humbuckers
+- Two hand wound humbuckers
 
-\-25.5" scale 
+- 25.5" scale
 
-\-Alder top and back with mahogany sides
+- Alder top and back with mahogany sides
 
-\-Padauk fingerboard with maple neck, bolt-on
+- Padauk fingerboard with maple neck, bolt-on
 
-\-Zebra wood and padauk details
+- Zebra wood and padauk details
