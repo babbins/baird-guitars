@@ -36,16 +36,15 @@ const Nav = ({ heading }) => (
         css={css`
           font-size: 40px;
           ${mq[0]} {
-            font-size: 50px;
+            font-size: 80px;
           }
+          font-family: "Untitled1";
+          font-weight: 300;
         `}
       >
         {heading}
       </h1>
     </Link>
-    <h2>
-      Instagram: <a href="https://instagram.com/byurrt">Byurrt</a>
-    </h2>
   </section>
 );
 

@@ -1,9 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
 import useSiteMetadata from "./SiteMetadata";
-import { Global, css } from "@emotion/core";
+import * as emotion from "@emotion/core";
 import Nav, { NAV_HEIGHT } from "./Nav.js";
 import mq from "../utils/mediaQueries";
+
+const { Global, css } = emotion;
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -59,6 +61,12 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Global
         styles={css`
+          @font-face {
+            font-family: "Untitled1";
+            font-style: normal;
+            font-weight: light;
+            src: url("/static/fonts/JINXFONT1.ttf") format("truetype");
+          }
           a:visited {
             color: inherit;
           }
@@ -79,9 +87,10 @@ const TemplateWrapper = ({ children }) => {
           * {
             margin: 0;
             padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
           }
+
           body {
-            font-family: Arial;
             background-color: #fffaf0;
             color: #200000;
           }
