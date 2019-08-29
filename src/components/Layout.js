@@ -65,7 +65,9 @@ const TemplateWrapper = ({ children }) => {
             font-family: "Untitled1";
             font-style: normal;
             font-weight: light;
-            src: url("/static/fonts/JINXFONT1.ttf") format("truetype");
+            src: url("/fonts/jinx.ttf") format("ttf");
+            src: url("/fonts/jinx.woff") format("woff");
+            src: url("/fonts/jinx.woff2") format("woff2");
           }
           a:visited {
             color: inherit;
