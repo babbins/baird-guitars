@@ -69,10 +69,9 @@ const TemplateWrapper = ({ children }) => {
             src: url("/fonts/jinx.woff") format("woff");
             src: url("/fonts/jinx.woff2") format("woff2");
           }
+          a,
           a:visited {
             color: inherit;
-          }
-          a {
             text-decoration: none;
           }
           .slick-image-gallery {
@@ -80,6 +79,7 @@ const TemplateWrapper = ({ children }) => {
           }
           .slick-image-gallery li {
             width: 60px;
+
             height: auto;
             display: inline-block;
             margin-right: 5px;
