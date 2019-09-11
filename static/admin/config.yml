@@ -33,10 +33,11 @@ collections:
     folder: "src/pages/customPages"
     create: true
     slug: "{{slug}}"
+    identifier_field: slug
     fields:
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Slug", name: "slug" }
       - { label: "Navbar Title", name: "navTitle" }
+      - { label: "Slug", name: "slug" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Template Key",
           name: "templateKey",
