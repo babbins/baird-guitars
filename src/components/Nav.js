@@ -37,7 +37,7 @@ const Nav = ({ heading }) => (
           ${mq[0]} {
             font-size: 80px;
           }
-          font-family: "Untitled1";
+          font-family: "jinx";
           font-weight: 300;
         `}
       >

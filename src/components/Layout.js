@@ -62,7 +62,7 @@ const TemplateWrapper = ({ children }) => {
       <Global
         styles={css`
           @font-face {
-            font-family: "Untitled1";
+            font-family: "jinx";
             font-style: normal;
             font-weight: light;
             src: url("/fonts/jinx.ttf") format("ttf");
