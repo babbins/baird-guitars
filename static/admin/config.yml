@@ -12,12 +12,37 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Slug", name: "slug"}
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "guitar-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: Guitar Image, name: "guitarImages", widget: list, field: {label: Image, name: image, widget: image}}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Slug", name: "slug" }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "guitar-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: Guitar Image,
+          name: "guitarImages",
+          widget: list,
+          field: { label: Image, name: image, widget: image },
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "customPages"
+    label: "Custom Pages"
+    folder: "src/pages/customPages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Slug", name: "slug" }
+      - { label: "Navbar Title", name: "navTitle" }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "custom-page",
+        }
   - name: "pages"
     label: "Pages"
     files:
@@ -25,11 +50,11 @@ collections:
         file: "src/pages/index.md"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden"}
-          - {label: Heading, name: heading, widget: string}
+          - { label: "Template Key", name: "templateKey", widget: "hidden" }
+          - { label: Heading, name: heading, widget: string }
           - label: "Gallery Item"
             name: "galleryItems"
             widget: "list"
             fields:
-              - {label: Image, name: image, widget: image}
-              - {label: URL, name: url, widget: text}
+              - { label: Image, name: image, widget: image }
+              - { label: URL, name: url, widget: text }

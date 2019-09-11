@@ -8,7 +8,7 @@ import ImageSlider from "../components/ImageSlider";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
 
-export const BlogPostTemplate = ({
+export const GuitarPageTemplate = ({
   title,
   content,
   contentComponent,
@@ -62,7 +62,7 @@ export const BlogPostTemplate = ({
   );
 };
 
-BlogPostTemplate.propTypes = {
+GuitarPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -70,7 +70,7 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object
 };
 
-const BlogPost = ({ data }) => {
+const GuitarPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -79,7 +79,7 @@ const BlogPost = ({ data }) => {
         <title>{`${post.frontmatter.title}`}</title>
         <meta name="description" content={`${post.frontmatter.description}`} />
       </Helmet>
-      <BlogPostTemplate
+      <GuitarPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -89,16 +89,16 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.propTypes = {
+GuitarPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object
   })
 };
 
-export default BlogPost;
+export default GuitarPage;
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query GuitarPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

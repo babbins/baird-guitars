@@ -72,6 +72,9 @@ const TemplateWrapper = ({ children }) => {
           a:visited {
             color: inherit;
           }
+          a {
+            text-decoration: none;
+          }
           .slick-image-gallery {
             position: static;
           }

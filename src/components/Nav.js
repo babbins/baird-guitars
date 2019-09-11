@@ -11,7 +11,7 @@ export const NAV_HEIGHT = {
 const Nav = ({ heading }) => (
   <section
     css={css`
-      position: fixed;
+      position: static;
       top: 0;
       width: 100%;
       text-align: center;
@@ -25,12 +25,7 @@ const Nav = ({ heading }) => (
       }
     `}
   >
-    <Link
-      css={{
-        textDecoration: "none"
-      }}
-      to="/"
-    >
+    <Link to="/">
       <h1
         css={css`
           font-size: 35px;
@@ -43,6 +38,25 @@ const Nav = ({ heading }) => (
       >
         {heading}
       </h1>
+    </Link>
+    <Link
+      css={css`
+        ${mq[0]} {
+          top: 10px;
+          right: 10px;
+          position: fixed;
+        }
+
+        font-family: "jinx";
+        font-weight: 300;
+        font-size: 30px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+      `}
+      to="/about"
+    >
+      ABOUT
     </Link>
   </section>
 );
