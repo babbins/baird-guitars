@@ -3,8 +3,8 @@ slug: about
 navTitle: About
 templateKey: custom-page
 ---
-# About my good friend Byurrt
+# 
 
-![A pic of byurrt and his buddy Q](/img/isaac.jpg "Byurt")
+![A pic of byurrt and his buddy Q]( "Byurt")
 
-Hes _byurttyful_
+I am a guitar builder at The Guitar Shop NYC ( https://theguitarshopnyc.com ) where I work on both the La Bella Olinto basses and my own custom hand made instruments. I started building my first instrument with my father and met Mas Hino when i was fifteen. Mas
