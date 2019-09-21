@@ -14,7 +14,7 @@ guitarImages:
 ---
 BE WELL™
 
-Chambered solid body electric built for Lila Ramani of the band Crumb
+Chambered solid body electric built for Lila Ramani of the band Crumb ( https://www.crumbtheband.com )
 
 ![Crumb The Band](/img/crumb-8923.jpg "Crumb The Band")
 
