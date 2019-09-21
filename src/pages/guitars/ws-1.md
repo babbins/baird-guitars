@@ -13,12 +13,10 @@ guitarImages:
 
 Solid body bass
 
-- hand wound P pick up in the neck position and a hand wound J pick up by the bridge
+built for William Suarez 
 
-- 34" scale
-
-- Bass wood body
-
-- Rosewood finger board on a maple neck
-
-- hand made zebrawood pick up covers
+* hand wound P pick up in the neck position and a hand wound J pick up by the bridge
+* 34" scale
+* Bass wood body
+* Rosewood finger board on a maple neck
+* hand made zebrawood pick up covers
