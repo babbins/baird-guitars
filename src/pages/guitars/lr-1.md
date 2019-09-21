@@ -1,7 +1,7 @@
 ---
 slug: lr-1
 templateKey: guitar-page
-title: BE WELL™
+title: the BE WELL™
 description: lilllaaaa
 guitarImages:
   - /img/img_2928.jpg
