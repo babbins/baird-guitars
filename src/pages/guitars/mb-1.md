@@ -10,7 +10,9 @@ guitarImages:
 
 hollow body electric
 
-Built for my one and only brother Max Baird ! ( https://maxyandthebeefcakes.bandcamp.com )
+Built for my one and only brother Max Baird ! 
+
+( https://maxyandthebeefcakes.bandcamp.com )
 
 * Two hand wound humbuckers
 * 25.5" scale
