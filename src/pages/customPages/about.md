@@ -5,7 +5,7 @@ templateKey: custom-page
 ---
 # 
 
-![A picture of Isaac and his father Joe](/img/img_3280.jpg "Isaac and his pop")
+![A picture of Isaac and his father Joe](/img/img_3280.jpeg "Isaac and his pop")
 
 I am a guitar builder at The Guitar Shop NYC ( https://theguitarshopnyc.com ) where I work on both the La Bella Olinto basses and my own custom hand made instruments. Every Baird instrument is made entirely by hand including the pickups. It is important to me as a luthier to involve myself in as many steps of the building process as i can, I feel this way i can have the most control and explorative freedom possible. Every Baird instrument is one of a kind.
 
