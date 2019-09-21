@@ -12,10 +12,9 @@ guitarImages:
 
 chambered electric
 
-- three hand wound humbuckers
+Built for Nicholas Wetherell ( https://nicholasjohn.bandcamp.com ) check out his music!
 
-- 24.75" scale
-
-- One piece mahogany top and sides with a mahogany back
-
-- Ebony fingerboard with bolt-on mahogany neck
+* three hand wound humbuckers
+* 24.75" scale
+* One piece mahogany top and sides with a mahogany back
+* Ebony fingerboard with bolt-on mahogany neck
