@@ -8,7 +8,7 @@ guitarImages:
   - /img/img_3560.jpg
   - /img/img_3549.jpg
 ---
-**NW-1**
+**NW-1 "WINONA"**
 
 chambered electric
 
