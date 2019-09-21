@@ -15,12 +15,12 @@ guitarImages:
 
 hollow body electric
 
-- Two hand wound humbuckers
 
-- 25.5" scale
 
-- Alder top and back with mahogany sides
+Built for  Ilya Rubnich ( https://ilya.pizza ) <3
 
-- Padauk fingerboard with maple neck, bolt-on
-
-- Zebra wood and padauk details
+* Two hand wound humbuckers
+* 25.5" scale
+* Alder top and back with mahogany sides
+* Padauk fingerboard with maple neck, bolt-on
+* Zebra wood and padauk details
