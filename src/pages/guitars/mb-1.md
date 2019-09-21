@@ -10,12 +10,10 @@ guitarImages:
 
 hollow body electric
 
-- Two hand wound humbuckers
+Built for my one and only brother Max Baird ! ( https://maxyandthebeefcakes.bandcamp.com )
 
-- 25.5" scale
-
-- Quilted maple top with bass wood sides and roasted alder back
-
-- Wenge fingerboard on a maple neck, bolt-on
-
-- Ebony tailpiece
+* Two hand wound humbuckers
+* 25.5" scale
+* Quilted maple top with bass wood sides and roasted alder back
+* Wenge fingerboard on a maple neck, bolt-on
+* Ebony tailpiece
