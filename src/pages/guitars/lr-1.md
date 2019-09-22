@@ -1,7 +1,7 @@
 ---
 slug: lr-1
 templateKey: guitar-page
-title: LR-1
+title: the BE WELL™
 description: lilllaaaa
 guitarImages:
   - /img/img_2928.jpg
@@ -12,14 +12,16 @@ guitarImages:
   - /img/img_2934.jpg
   - /img/img_3173.jpg
 ---
-**LR-1**
+BE WELL™
 
-Chambered solid body electric
+Chambered solid body electric built for Lila Ramani of Crumb
 
-- Two hand wound mini humbuckers, later switched to one mini humbucker in the neck position and a normal hand wound humbucker by the bridge
+( https://www.crumbtheband.com )
 
-- 25.5" scale
+![Crumb The Band](/img/crumb-8923.jpg "Crumb The Band")
 
-- Mahogany body
-
-- Rosewood fingerboard on a maple neck
+* Two hand wound mini humbuckers, later switched to one mini humbucker in the neck position and a normal hand wound humbucker by the bridge
+* 25.5" scale
+* Mahogany body
+* Rosewood fingerboard on a maple neck
+* hand cut brass and aluminum pick guards

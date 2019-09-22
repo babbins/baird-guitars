@@ -8,14 +8,13 @@ guitarImages:
   - /img/img_3560.jpg
   - /img/img_3549.jpg
 ---
-**NW-1**
+**NW-1 "WINONA"**
 
 chambered electric
 
-- three hand wound humbuckers
+Built for Nicholas Wetherell ( https://nicholasjohn.bandcamp.com ) check out his music!
 
-- 24.75" scale
-
-- One piece mahogany top and sides with a mahogany back
-
-- Ebony fingerboard with bolt-on mahogany neck
+* three hand wound humbuckers
+* 24.75" scale
+* One piece mahogany top and sides with a mahogany back
+* Ebony fingerboard with bolt-on mahogany neck
