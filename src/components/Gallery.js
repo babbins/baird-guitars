@@ -8,7 +8,7 @@ const GalleryImage = ({ image, className }) => (
 );
 
 const GalleryItemCss = {
-  width: "55%",
+  width: "33%",
   [mq[0]]: {
     width: "25%"
   }

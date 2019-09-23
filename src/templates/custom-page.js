@@ -7,10 +7,14 @@ import Content, { HTMLContent } from "../components/Content";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
 
+
 export const CustomPageTemplate = ({ title, content, contentComponent }) => {
   const PostContent = contentComponent || Content;
 
-  return <PostContent content={content} />;
+  return <PostContent
+    css={css`
+    margin: 2% 5%;
+  `} content={content} />;
 };
 
 CustomPageTemplate.propTypes = {
