@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import styled from "@emotion/styled";
+import { slide as Menu } from 'react-burger-menu';
+import useWindowSize from '../hooks/useWindowSize';
+import hamburgerNavStyles from '../misc/hamburgerNavStyles';
 
 export const NAV_HEIGHT = {
-  MOBILE: 80,
+  MOBILE: 20,
   DESKTOP: 90
 };
 
 const NavLink = styled(Link)`
   font-family: "jinx";
   font-weight: 300;
-  font-size: 30px;
+  font-size: 40px;
   display: block;
+  ${mq[0]} {
+    font-size: 25px;
+  }
 `;
 
+const MENU_CONTAINER = "menu-container";
+
 const Nav = ({ heading }) => {
+  const [isOpen, setOpen] = useState(false);
+  const handleMenuStateChange = state => setOpen(state.isOpen);
+  const closeMenu = () => { console.log('cliose'); setOpen(false); }
+
   const navItems = useStaticQuery(
     graphql`
       query NAV_ITEMS {
@@ -37,6 +49,8 @@ const Nav = ({ heading }) => {
     `
   ).allMarkdownRemark.edges.map(edge => edge.node.frontmatter);
 
+  const size = useWindowSize();
+
   return (
     <section
       css={css`
@@ -45,47 +59,62 @@ const Nav = ({ heading }) => {
         width: 100%;
         text-align: center;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
         z-index: 1;
         background-color: #fffaf0;
         ${mq[0]} {
-          position: static;
+          justify-content: flex-start;
+          flex-direction: column;
         }
       `}
+      id={MENU_CONTAINER}
     >
       <Link to="/">
         <h1
           css={css`
-            font-size: 35px;
-            ${mq[0]} {
-              font-size: 80px;
-            }
             font-family: "jinx";
             font-weight: 300;
+            font-size: 9.5vw;
+            margin-left: 10px;
+
+            ${mq[0]} {
+              font-size: 6.5vw;
+              position: static;
+              margin-left: 0;
+            }
           `}
         >
           {heading}
         </h1>
       </Link>
-      <section
-        css={css`
+
+      {size.width < 768 ?
+        (<Menu isOpen={isOpen} onStateChange={handleMenuStateChange} width="100%" right styles={hamburgerNavStyles} outerContainerId={MENU_CONTAINER} pageWrapId="page-wrap">
+          <NavLink onClick={closeMenu} key="gallery" to="/">GUITARS</NavLink>
+          <NavItems items={navItems} handleClick={closeMenu} />
+        </Menu>) : (<section
+          css={css`
           ${mq[0]} {
             top: 10px;
             right: 10px;
             position: fixed;
           }
-          position: absolute;
-          top: 40px;
-          right: 30px;
         `}
-      >
-        {navItems.map(({ navTitle, slug }) => (
-          <NavLink to={`/${slug}`}>{navTitle.toUpperCase()}</NavLink>
-        ))}
-      </section>
+        >
+          <NavItems handleClick={closeMenu} items={navItems} />
+        </section>)
+      }
     </section>
   );
 };
+
+const NavItems = ({ items, handleClick }) => (
+  <>
+    {items.map(({ navTitle, slug }) => (
+      <NavLink onClick={handleClick} key={slug} to={`/${slug}`}>{navTitle.toUpperCase()}</NavLink>
+    ))}
+  </>
+);
 
 export default Nav;
