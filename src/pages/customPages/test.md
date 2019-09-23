@@ -1,6 +1,6 @@
 ---
-navTitle: electronics
-slug: electronics
+navTitle: pickups
+slug: pickups
 templateKey: custom-page
 ---
 ## PICK-UPS
