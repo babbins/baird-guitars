@@ -14,4 +14,7 @@ galleryItems:
     url: /guitars/nw-1
   - image: /img/wills-bass.png
     url: /guitars/ws-1
+  - image: /img/alis-guit.png
+    url: /guitars/zulfiqar
 ---
+
