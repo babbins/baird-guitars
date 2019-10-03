@@ -1,5 +1,5 @@
 ---
-slug: the zulfiqar
+slug: the-zulfiqar
 templateKey: guitar-page
 title: the zulfiqar
 description: aliiiiiii
