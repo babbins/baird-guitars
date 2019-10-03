@@ -1,7 +1,7 @@
 ---
-slug: zulfiqar
+slug: the zulfiqar
 templateKey: guitar-page
-title: zulfiqar
+title: the zulfiqar
 description: aliiiiiii
 guitarImages:
   - /img/img_3856.jpg
