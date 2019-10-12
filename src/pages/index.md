@@ -2,6 +2,8 @@
 templateKey: index-page
 heading: BAIRD GUITARS
 galleryItems:
+  - image: /img/img_3882.png
+    url: /guitars/zb-1
   - image: /img/alis-guit.png
     url: /guitars/the-zulfiqar
   - image: /img/blue-boy-icon.png
