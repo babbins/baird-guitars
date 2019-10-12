@@ -1,7 +1,7 @@
 ---
 slug: the-zulfiqar
 templateKey: guitar-page
-title: The Zulfiqar
+title: THE ZULFIQAR
 description: aliiiiiii
 guitarImages:
   - /img/img_3856.jpg
@@ -11,4 +11,12 @@ guitarImages:
   - /img/img_3852.jpg
   - /img/img_3858.jpg
 ---
-The Zulfiqar
+THE ZULFIQAR
+
+Solid body electric built for Ali Mahmoud 
+
+* Three shielded hand wound split coil pickups
+* 25.5" inch scale
+* Mahogany body
+* Madagascar rosewood on a maple neck
+* Bigsby tremelo
