@@ -6,11 +6,6 @@ import mq from "../utils/mediaQueries";
 import Lightbox from 'react-image-lightbox';
 import Img from "gatsby-image";
 
-const StyledImg = styled(Img)`
-  & > div {
-    padding-bottom: 100% !important;
-  }
-`;
 
 const ImageSlider = ({ images, className }) => {
   const [isOpenLightbox, setIsOpenLightbox] = React.useState(false);
@@ -25,7 +20,7 @@ const ImageSlider = ({ images, className }) => {
     customPaging: function (i) {
       return (
         <a>
-          <StyledImg
+          <Img
             css={css`
               width: 100%;
             `}
@@ -54,7 +49,7 @@ const ImageSlider = ({ images, className }) => {
             }}
             key={image.childImageSharp.fluid.src}
           >
-            <StyledImg
+            <Img
               fluid={image.childImageSharp.fluid}
               key={image.childImageSharp.fluid.src}
             />
