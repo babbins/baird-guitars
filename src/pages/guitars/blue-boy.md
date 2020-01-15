@@ -1,5 +1,6 @@
 ---
 slug: blue-boy
+forSale: true
 templateKey: guitar-page
 title: BB-1
 description: >-

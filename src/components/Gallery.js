@@ -14,7 +14,7 @@ const GalleryItemCss = {
   }
 };
 
-const Gallery = ({ galleryItems, links }) => (
+const Gallery = ({ galleryItems }) => (
   <div
     css={{
       display: "flex",

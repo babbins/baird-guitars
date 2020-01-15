@@ -14,6 +14,12 @@ collections:
     fields:
       - { label: "Slug", name: "slug" }
       - {
+          label: "For Sale",
+          name: "forSale",
+          widget: "boolean",
+          deafult: false,
+        }
+      - {
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
@@ -59,3 +65,17 @@ collections:
             fields:
               - { label: Image, name: image, widget: image }
               - { label: URL, name: url, widget: text }
+
+      - label: "Homepage"
+        file: "src/pages/for-sale.md"
+        name: "index"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden" }
+          - label: "Gallery Item"
+            name: "galleryItems"
+            widget: "list"
+            fields:
+              - { label: Name, name: name, widget: text }
+              - { label: Image, name: image, widget: image }
+              - { label: URL, name: url, widget: text }
+              - { label: Description, name: description, widget: text }

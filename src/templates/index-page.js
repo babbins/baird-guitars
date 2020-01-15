@@ -5,7 +5,7 @@ import Gallery from "../components/Gallery";
 import mq from "../utils/mediaQueries";
 import { css } from "@emotion/core";
 
-export const IndexPageTemplate = ({ heading, galleryItems, links }) => (
+export const IndexPageTemplate = ({ heading, galleryItems }) => (
   <div
     css={css`
       width: "90%",
@@ -14,13 +14,12 @@ export const IndexPageTemplate = ({ heading, galleryItems, links }) => (
       },
     `}
   >
-    <Gallery galleryItems={galleryItems} links={links} />
+    <Gallery galleryItems={galleryItems} />
   </div>
 );
 
 const IndexPage = ({ data }) => {
   const { heading, galleryItems } = data.markdownRemark.frontmatter;
-  console.log(data.markdownRemark.frontmatter, "dis da frontmette");
 
   return (
     <Layout>

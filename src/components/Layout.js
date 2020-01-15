@@ -21,6 +21,7 @@ const TemplateWrapper = ({ children }) => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         />
+        <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet" />
         // Add the new slick-theme.css if you want the default styling
         <link
           rel="stylesheet"
@@ -72,7 +73,7 @@ const TemplateWrapper = ({ children }) => {
           }
           a,
           a:visited {
-            color: inherit;
+            color: blue;
             text-decoration: none;
           }
           .slick-image-gallery {
@@ -93,7 +94,7 @@ const TemplateWrapper = ({ children }) => {
           * {
             margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Courier Prime', monospace;
           }
 
           body {

@@ -14,11 +14,13 @@ export const NAV_HEIGHT = {
 
 const NavLink = styled(Link)`
   font-family: "jinx";
+  color: white !important;
   font-weight: 300;
   font-size: 40px;
   display: block;
   ${mq[0]} {
     font-size: 25px;
+    color: #200000 !important;
   }
 `;
 
@@ -77,7 +79,7 @@ const Nav = ({ heading }) => {
             font-weight: 300;
             font-size: 9.5vw;
             margin-left: 10px;
-
+            color: #200000 !important;
             ${mq[0]} {
               font-size: 6.5vw;
               position: static;
@@ -92,6 +94,7 @@ const Nav = ({ heading }) => {
       {size.width < 768 ?
         (<Menu isOpen={isOpen} onStateChange={handleMenuStateChange} width="100%" right styles={hamburgerNavStyles} outerContainerId={MENU_CONTAINER} pageWrapId="page-wrap">
           <NavLink onClick={closeMenu} key="gallery" to="/">GUITARS</NavLink>
+          <NavLink onClick={closeMenu} key="gallery" to="/for-sale">FOR SALE</NavLink>
           <NavItems items={navItems} handleClick={closeMenu} />
         </Menu>) : (<section
           css={css`
@@ -102,6 +105,8 @@ const Nav = ({ heading }) => {
           }
         `}
         >
+          <NavLink onClick={closeMenu} key="gallery" to="/">GUITARS</NavLink>
+          <NavLink onClick={closeMenu} key="gallery" to="/for-sale">FOR SALE</NavLink>
           <NavItems handleClick={closeMenu} items={navItems} />
         </section>)
       }
