@@ -4,6 +4,7 @@ import useSiteMetadata from "./SiteMetadata";
 import * as emotion from "@emotion/core";
 import Nav, { NAV_HEIGHT } from "./Nav.js";
 import mq from "../utils/mediaQueries";
+import 'react-image-lightbox/style.css';
 
 const { Global, css } = emotion;
 

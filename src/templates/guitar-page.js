@@ -22,14 +22,17 @@ export const GuitarPageTemplate = ({
         <div>
           <div
             css={css`
-              display: grid;
-              grid-template-columns: repeat(12, 1fr);
-              grid-column-gap: 50px;
+              display: block;
+              margin: 0px;
+              ${mq[0]} {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-column-gap: 50px;
+              }
             `}
           >
             <h1
               css={css`
-                grid-column: 2 / 11;
                 ${mq[0]} {
                   grid-column: 2 / 6;
                 }
@@ -39,7 +42,6 @@ export const GuitarPageTemplate = ({
             </h1>
             <ImageSlider
               css={css`
-                grid-column: 2 / 11;
                 ${mq[0]} {
                   grid-column: 2 / 6;
                 }
@@ -48,7 +50,6 @@ export const GuitarPageTemplate = ({
             />
             <PostContent
               css={css`
-                grid-column: 2 / 11;
                 ${mq[0]} {
                   grid-column: 6 / 12;
                 }

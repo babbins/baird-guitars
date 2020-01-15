@@ -2,17 +2,20 @@ import React from "react";
 import Slider from "react-slick";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
-import ReactImageMagnify from "react-image-magnify";
+import Lightbox from 'react-image-lightbox';
 import Img from "gatsby-image";
 
 const ImageSlider = ({ images, className }) => {
+  const [isOpenLightbox, setIsOpenLightbox] = React.useState(false);
+  const [currentImage, setCurrentImage] = React.useState(null);
+
   const settings = {
     dots: true,
     dotsClass: "slick-image-gallery",
     speed: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
-    customPaging: function(i) {
+    customPaging: function (i) {
       return (
         <a>
           <Img
@@ -34,7 +37,13 @@ const ImageSlider = ({ images, className }) => {
           <div
             css={css`
               width: 100%;
+              cursor: pointer;
             `}
+            onClick={() => {
+              console.log('clicked')
+              setCurrentImage(image.childImageSharp.fluid.src);
+              setIsOpenLightbox(true);
+            }}
             key={image.childImageSharp.fluid.src}
           >
             <Img
@@ -44,6 +53,12 @@ const ImageSlider = ({ images, className }) => {
           </div>
         ))}
       </Slider>
+      {isOpenLightbox && currentImage && (
+        <Lightbox
+          mainSrc={currentImage}
+          onCloseRequest={() => setIsOpenLightbox(false)}
+        />
+      )}
     </div>
   );
 };

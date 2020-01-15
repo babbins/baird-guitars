@@ -34,7 +34,8 @@
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "react-image-magnify": "^2.7.4",
+    "react-image-lightbox": "^5.1.1",
+    "react-modal-image": "^2.5.0",
     "react-slick": "^0.24.0",
     "slick-carousel": "^1.8.1",
     "uuid": "^3.2.1"
