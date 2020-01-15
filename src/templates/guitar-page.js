@@ -23,7 +23,7 @@ export const GuitarPageTemplate = ({
           <div
             css={css`
               display: block;
-              margin: 0px;
+              margin: 20px;
               ${mq[0]} {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
@@ -34,7 +34,7 @@ export const GuitarPageTemplate = ({
             <h1
               css={css`
                 ${mq[0]} {
-                  grid-column: 2 / 6;
+                  grid-column: 2 / 12;
                 }
               `}
             >
@@ -43,7 +43,7 @@ export const GuitarPageTemplate = ({
             <ImageSlider
               css={css`
                 ${mq[0]} {
-                  grid-column: 2 / 6;
+                  grid-column: 2 / 9;
                 }
               `}
               images={guitarImages}
@@ -51,7 +51,7 @@ export const GuitarPageTemplate = ({
             <PostContent
               css={css`
                 ${mq[0]} {
-                  grid-column: 6 / 12;
+                  grid-column: 9 / 12;
                 }
               `}
               content={content}

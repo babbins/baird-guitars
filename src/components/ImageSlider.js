@@ -1,9 +1,16 @@
 import React from "react";
 import Slider from "react-slick";
 import { css } from "@emotion/core";
+import styled from "@emotion/styled";
 import mq from "../utils/mediaQueries";
 import Lightbox from 'react-image-lightbox';
 import Img from "gatsby-image";
+
+const StyledImg = styled(Img)`
+  & > div {
+    padding-bottom: 100% !important;
+  }
+`;
 
 const ImageSlider = ({ images, className }) => {
   const [isOpenLightbox, setIsOpenLightbox] = React.useState(false);
@@ -18,7 +25,7 @@ const ImageSlider = ({ images, className }) => {
     customPaging: function (i) {
       return (
         <a>
-          <Img
+          <StyledImg
             css={css`
               width: 100%;
             `}
@@ -32,6 +39,7 @@ const ImageSlider = ({ images, className }) => {
 
   return (
     <div className={className}>
+
       <Slider {...settings}>
         {images.map(image => (
           <div
@@ -46,7 +54,7 @@ const ImageSlider = ({ images, className }) => {
             }}
             key={image.childImageSharp.fluid.src}
           >
-            <Img
+            <StyledImg
               fluid={image.childImageSharp.fluid}
               key={image.childImageSharp.fluid.src}
             />
