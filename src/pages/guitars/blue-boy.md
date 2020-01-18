@@ -3,9 +3,7 @@ slug: blue-boy
 forSale: true
 templateKey: guitar-page
 title: BB-1
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+description: hahaha
 guitarImages:
   - /img/blue-body.jpg
   - /img/blue-body-angled.jpg
