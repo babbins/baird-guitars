@@ -57,7 +57,12 @@ collections:
         file: "src/pages/index.md"
         name: "index"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden" }
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "homepage",
+            }
           - { label: Heading, name: heading, widget: string }
           - label: "Gallery Item"
             name: "galleryItems"
@@ -70,7 +75,12 @@ collections:
         file: "src/pages/for-sale.md"
         name: "index"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden" }
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "for-sale",
+            }
           - label: "Gallery Item"
             name: "galleryItems"
             widget: "list"
