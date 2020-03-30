@@ -14,16 +14,15 @@ guitarImages:
   - /img/img_3278.jpeg
   - /img/img_3374.jpg
 ---
-
 ## BB-1
 
 Hollow body electric fretless
 
-For this bass i wanted to make a hollow body instrument that might look like a solid body electric at first glance and could at least be loud enough for the player to hear it and enjoy its sound unplugged.
+For this bass i wanted to make a light-weight hollow body instrument that might look like a solid body electric at first glance and could at least be loud enough for the player to hear it and enjoy its sound unplugged.
 
-- Shielded hand wound single coil with hum canceling dummy coil
-- 34" scale
-- Alder top and back with maple sides and mahogany neck and end blocks
-- Wenge fingerboard with port orford cedar neck, bolt-on
-- Hand cut brass tail piece and bridge
-- Zebra wood and wenge details
+* Shielded hand wound single coil with hum canceling dummy coil
+* 34" scale
+* Alder top and back with maple sides and mahogany neck and end blocks
+* Wenge fingerboard with port orford cedar neck, bolt-on
+* Hand cut brass tail piece and bridge
+* Zebra wood and wenge details
