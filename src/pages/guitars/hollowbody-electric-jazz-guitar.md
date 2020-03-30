@@ -3,7 +3,14 @@ slug: hollowbody-electric-jazz
 forSale: true
 templateKey: guitar-page
 title: Hollowbody Electric Jazz Guitar
-description: Hollow body Electric Jazz Guitar
+description: >
+  A fully hollow-body guitar made to have the feel and look of a modern solid
+  body electric, but the sound of a hollow jazz style guitar. The neck block is
+  exposed and larger than what would be normal on an archtop which allows for
+  the body to be carved like a solid body to allow the player to reach the
+  higher frets. the top and back are curved, which means the body becomes
+  thinner the further you get away from the center line of the body. The bridge
+  is hollowed out from the back like a gypsy guitar.
 guitarImages:
   - /img/img_4251.jpeg
   - /img/img_4252.jpeg
