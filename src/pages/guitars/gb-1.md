@@ -18,6 +18,7 @@ guitarImages:
   - /img/img_4196.jpeg
   - /img/img_4260.jpeg
   - /img/img_4206.jpeg
+  - /img/img_3715.jpg
 ---
 
 ## Hollow-body Electric Jazz
