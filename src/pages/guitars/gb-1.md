@@ -1,5 +1,4 @@
 ---
-slug: gb-1
 forSale: true
 templateKey: guitar-page
 title: gb-1

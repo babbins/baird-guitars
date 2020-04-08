@@ -1,5 +1,4 @@
 ---
-slug: the-zulfiqar
 forSale: false
 templateKey: guitar-page
 title: THE ZULFIQAR

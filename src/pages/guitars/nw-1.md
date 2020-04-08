@@ -1,5 +1,4 @@
 ---
-slug: nw-1
 forSale: false
 templateKey: guitar-page
 title: NW-1
