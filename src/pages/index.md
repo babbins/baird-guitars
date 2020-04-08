@@ -3,7 +3,7 @@ templateKey: index-page
 heading: BAIRD GUITARS
 galleryItems:
   - image: /img/white-hollow-body-guitar-icon.png
-    url: /guitars/hollowbody-electric-jazz
+    url: /guitars/gb-1
   - image: /img/img_3882.png
     url: /guitars/zb-1
   - image: /img/alis-guit.png
