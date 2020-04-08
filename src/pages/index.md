@@ -18,5 +18,7 @@ galleryItems:
     url: /guitars/nw-1
   - image: /img/wills-bass.png
     url: /guitars/ws-1
+  - image: /img/white-hollow-body-guitar-icon.png
+    url: /guitars/hollowbody-electric-jazz
 ---
 
