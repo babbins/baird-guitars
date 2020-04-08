@@ -2,7 +2,7 @@
 slug: gb-1
 forSale: true
 templateKey: guitar-page
-title: hollowbody-electric-jazz
+title: gb-1
 description: hollowbody-electric-jazz
 guitarImages:
   - /img/img_4251.jpeg
