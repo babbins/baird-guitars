@@ -1,5 +1,5 @@
 ---
-slug: hollowbody-electric-jazz
+slug: gb-1
 forSale: true
 templateKey: guitar-page
 title: hollowbody-electric-jazz
