@@ -2,7 +2,7 @@
 slug: hollowbody-electric-jazz
 forSale: true
 templateKey: guitar-page
-title: BB-2
+title: hollowbody-electric-jazz
 description: Hollowbody Electric Jazz Guitar
 guitarImages:
   - /img/img_4251.jpeg
