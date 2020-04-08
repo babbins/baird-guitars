@@ -1,6 +1,10 @@
 ---
 templateKey: for-sale
 galleryItems:
+  - description: Fully hollow jazz style electric guitar
+    image: /img/white-hollow-body-guitar-icon-horizontal.png
+    name: Hollowbody Jazz Guitar
+    url: /guitars/hollowbody-electric-jazz
   - description: Short scale solid body bass with three sets of p style pickups
     image: /img/img_3882-horizontal.png
     name: ZB-1
