@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
+import mq from "../utils/mediaQueries";
 
 const Div = styled.div`
   span {
@@ -17,6 +18,9 @@ const Div = styled.div`
   ul {
     margin-left: 30px;
   }
+
+  max-width: 850px;
+  margin: 50px auto;
 `;
 
 export const HTMLContent = ({ content, className }) => (

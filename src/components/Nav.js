@@ -80,7 +80,7 @@ const Nav = ({ heading }) => {
             font-family: "jinx";
             font-weight: 300;
             font-size: 60px;
-
+            line-height: 1;
             color: #200000 !important;
             ${mq[0]} {
               font-size: 6.5vw;
@@ -145,6 +145,7 @@ const NavItems = ({ items, handleClick }) => (
         {navTitle.toUpperCase()}
       </NavLink>
     ))}
+    <NavLink>OTHER</NavLink>
   </>
 );
 

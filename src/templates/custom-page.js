@@ -6,21 +6,26 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
-
-
 export const CustomPageTemplate = ({ title, content, contentComponent }) => {
   const PostContent = contentComponent || Content;
 
-  return <PostContent
-    css={css`
-    margin: 2% 5%;
-  `} content={content} />;
+  return (
+    <PostContent
+      css={css`
+        padding: 0 20px;
+        @media (min-width: 600px) {
+          padding: 0 40px;
+        }
+      `}
+      content={content}
+    />
+  );
 };
 
 CustomPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  navTitle: PropTypes.string
+  navTitle: PropTypes.string,
 };
 
 const CustomPage = ({ data }) => {
@@ -42,8 +47,8 @@ const CustomPage = ({ data }) => {
 
 CustomPage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object
-  })
+    markdownRemark: PropTypes.object,
+  }),
 };
 
 export default CustomPage;
