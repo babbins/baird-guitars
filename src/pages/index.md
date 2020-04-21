@@ -19,4 +19,3 @@ galleryItems:
   - image: /img/wills-bass.png
     url: /guitars/ws-1
 ---
-

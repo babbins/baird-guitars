@@ -34,6 +34,34 @@ collections:
           field: { label: Image, name: image, widget: image },
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "works"
+    label: "Works"
+    folder: "src/pages/works"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Slug", name: "slug" }
+      - {
+          label: "For Sale",
+          name: "forSale",
+          widget: "boolean",
+          deafult: false,
+        }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "guitar-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: Guitar Image,
+          name: "guitarImages",
+          widget: list,
+          field: { label: Image, name: image, widget: image },
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "customPages"
     label: "Custom Pages"
     folder: "src/pages/customPages"
