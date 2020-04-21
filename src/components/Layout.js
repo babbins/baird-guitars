@@ -4,7 +4,7 @@ import useSiteMetadata from "./SiteMetadata";
 import * as emotion from "@emotion/core";
 import Nav, { NAV_HEIGHT } from "./Nav.js";
 import mq from "../utils/mediaQueries";
-import 'react-image-lightbox/style.css';
+import "react-image-lightbox/style.css";
 
 const { Global, css } = emotion;
 
@@ -21,7 +21,10 @@ const TemplateWrapper = ({ children }) => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         />
-        <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap"
+          rel="stylesheet"
+        />
         // Add the new slick-theme.css if you want the default styling
         <link
           rel="stylesheet"
@@ -94,7 +97,7 @@ const TemplateWrapper = ({ children }) => {
           * {
             margin: 0;
             padding: 0;
-            font-family: 'Courier Prime', monospace;
+            font-family: "Courier Prime", monospace;
           }
 
           body {
@@ -108,8 +111,9 @@ const TemplateWrapper = ({ children }) => {
         css={{
           margin: "0 auto",
           marginTop: NAV_HEIGHT.MOBILE + 10 + "px",
-          [mq[0]]: {
-            width: "70%",
+          [mq[2]]: {
+            width: "80%",
+            minWidth: "1000px",
             marginTop: 0
           },
           position: "relative"

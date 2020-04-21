@@ -1,6 +1,4 @@
 ---
-slug: ir-1
-forSale: false
 templateKey: guitar-page
 title: IR-1
 description: ilyaaaaa

@@ -12,52 +12,56 @@ export const GuitarPageTemplate = ({
   title,
   content,
   contentComponent,
-  guitarImages
+  guitarImages,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <section>
-      <div>
-        <div>
-          <div
-            css={css`
-              display: block;
-              margin: 20px;
-              ${mq[0]} {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                grid-column-gap: 50px;
-              }
-            `}
-          >
-            <h1
-              css={css`
-                ${mq[0]} {
-                  grid-column: 2 / 12;
-                }
-              `}
-            >
-              {title}
-            </h1>
-            <ImageSlider
-              css={css`
-                ${mq[0]} {
-                  grid-column: 2 / 9;
-                }
-              `}
-              images={guitarImages}
-            />
-            <PostContent
-              css={css`
-                ${mq[0]} {
-                  grid-column: 9 / 12;
-                }
-              `}
-              content={content}
-            />
-          </div>
-        </div>
+      <div
+        css={css`
+          display: block;
+          margin: 20px;
+          ${mq[0]} {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: 50px;
+          }
+        `}
+      >
+        <h1
+          css={css`
+            ${mq[0]} {
+              grid-column: 2 / 12;
+            }
+          `}
+        >
+          {title}
+        </h1>
+        <ImageSlider
+          css={css`
+            ${mq[0]} {
+              grid-column: 1 / 7;
+            }
+            ${mq[1]} {
+              grid-column: 1 / 8;
+            }
+          `}
+          images={guitarImages}
+        />
+        <PostContent
+          css={css`
+            margin-top: 20px;
+            ${mq[0]} {
+              margin-top: 0;
+              grid-column: 7 / end;
+            }
+            ${mq[1]} {
+              grid-column: 8 / end;
+            }
+          `}
+          content={content}
+        />
       </div>
     </section>
   );
@@ -68,7 +72,7 @@ GuitarPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
 };
 
 const GuitarPage = ({ data }) => {
@@ -92,8 +96,8 @@ const GuitarPage = ({ data }) => {
 
 GuitarPage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object
-  })
+    markdownRemark: PropTypes.object,
+  }),
 };
 
 export default GuitarPage;

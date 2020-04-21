@@ -1,5 +1,4 @@
 ---
-slug: mb-1
 forSale: false
 templateKey: guitar-page
 title: For Maxy

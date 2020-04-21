@@ -1,5 +1,4 @@
 ---
-slug: ws-1
 forSale: false
 templateKey: guitar-page
 title: WS-1

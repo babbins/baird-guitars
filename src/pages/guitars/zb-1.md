@@ -1,5 +1,4 @@
 ---
-slug: zb-1
 forSale: true
 templateKey: guitar-page
 title: ZB-1

@@ -1,5 +1,4 @@
 ---
-slug: blue-boy
 forSale: true
 templateKey: guitar-page
 title: BB-1
@@ -19,7 +18,7 @@ guitarImages:
 
 Hollow body electric fretless
 
-For this bass i wanted to make a hollow body instrument that might look like a solid body electric at first glance and could at least be loud enough for the player to hear it and enjoy its sound unplugged.
+For this bass i wanted to make a light-weight hollow body instrument that might look like a solid body electric at first glance and could at least be loud enough for the player to hear it and enjoy its sound unplugged.
 
 - Shielded hand wound single coil with hum canceling dummy coil
 - 34" scale
