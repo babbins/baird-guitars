@@ -145,7 +145,7 @@ const NavItems = ({ items, handleClick }) => (
         {navTitle.toUpperCase()}
       </NavLink>
     ))}
-    <NavLink>OTHER</NavLink>
+    <NavLink to="/other">OTHER</NavLink>
   </>
 );
 
