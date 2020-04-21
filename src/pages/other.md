@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: other-page
 heading: BAIRD GUITARS
 galleryItems:
   - image: /img/alis-guit.png
