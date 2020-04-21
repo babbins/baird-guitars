@@ -97,23 +97,23 @@ collections:
             fields:
               - { label: Image, name: image, widget: image }
               - { label: URL, name: url, widget: text }
-        - label: "Other"
-          file: "src/pages/other.md"
-          name: "other"
-          fields:
-            - {
-                label: "Template Key",
-                name: "templateKey",
-                widget: "hidden",
-                default: "index-page",
-              }
-            - { label: Heading, name: heading, widget: string }
-            - label: "Gallery Item"
-              name: "galleryItems"
-              widget: "list"
-              fields:
-                - { label: Image, name: image, widget: image }
-                - { label: URL, name: url, widget: text }
+      - label: "Other"
+        file: "src/pages/other.md"
+        name: "other"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Heading, name: heading, widget: string }
+          - label: "Gallery Item"
+            name: "galleryItems"
+            widget: "list"
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: URL, name: url, widget: text }
       - label: "For Sale"
         file: "src/pages/for-sale.md"
         name: "for-sale"
