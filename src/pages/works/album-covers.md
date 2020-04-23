@@ -1,5 +1,5 @@
 ---
-slug: albumcovers
+slug: album-covers
 forSale: true
 templateKey: guitar-page
 title: albumcovers
