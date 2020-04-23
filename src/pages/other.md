@@ -6,7 +6,7 @@ galleryItems:
     url: /works/album-covers
   - image: /img/img_2151.jpg
     url: /works/wood-block-prints/
-  - image: /img/img_1191.jpg
+  - image: /img/img_1171.jpg
     url: /works/etchings-and-monotypes/
 ---
 
