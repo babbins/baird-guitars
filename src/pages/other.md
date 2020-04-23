@@ -4,5 +4,7 @@ heading: BAIRD GUITARS
 galleryItems:
   - image: /img/album-cover-button.png
     url: /works/album-covers
+  - image: /img/img_2151.jpg
+    url: /works/woodblocks
 ---
 
