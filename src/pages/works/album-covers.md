@@ -2,8 +2,8 @@
 slug: albumcovers
 forSale: true
 templateKey: guitar-page
-title: Album Covers
-description: album covers
+title: albumcovers
+description: albumcovers
 guitarImages:
   - /img/locket-comp.jpg
   - /img/jinx-comp.jpg
