@@ -12,6 +12,8 @@ guitarImages:
   - /img/small-steps-comp.jpg
   - /img/freinds-of-ours-comp.jpg
   - /img/wolf-cough-comp.jpg
+  - /img/cave-versus-lenderson.jpg
+  - /img/cave-lenderson-comp.jpg
 ---
 Almost all covers were made collaboratively with either[ Alex Futtersak](https://www.afuttersak.com/) (*) or [Aberaham El Makawy](https://aintwet.nyc/) (+)
 
@@ -30,3 +32,7 @@ image 5 - [Small Steps cover](https://maxbuckland.bandcamp.com/) *
 Image 6 - [Friends Of Ours cover](https://slumsnyc.bandcamp.com/album/friends-of-ours)
 
 Image 7 - [Wolf Cough cover](https://www.youtube.com/watch?v=pWuAEe0HHUc) *
+
+Image 8 - [Cave V.S. Lenderson](https://citruscityrecords.bandcamp.com/album/cave-v-s-lenderson) (lettering by Jesse Brotter)
+
+image 9 - Cave V.S. Lenderson tape lettering
