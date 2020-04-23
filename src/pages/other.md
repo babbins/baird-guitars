@@ -1,6 +1,8 @@
 ---
 templateKey: other-page
 heading: BAIRD GUITARS
-galleryItems: []
+galleryItems:
+  - image: /img/album-cover-button.png
+    url: /works/albumcovers
 ---
 
