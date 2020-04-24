@@ -6,7 +6,6 @@ import styled from "@emotion/styled";
 import { slide as Menu } from "react-burger-menu";
 import useWindowSize from "../hooks/useWindowSize";
 import hamburgerNavStyles from "../misc/hamburgerNavStyles";
-
 export const NAV_HEIGHT = {
   MOBILE: 20,
   DESKTOP: 90,

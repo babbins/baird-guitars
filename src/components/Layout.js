@@ -5,6 +5,7 @@ import * as emotion from "@emotion/core";
 import Nav, { NAV_HEIGHT } from "./Nav.js";
 import mq from "../utils/mediaQueries";
 import "react-image-lightbox/style.css";
+import Footer from "./Footer";
 
 const { Global, css } = emotion;
 
@@ -76,7 +77,7 @@ const TemplateWrapper = ({ children }) => {
           }
           a,
           a:visited {
-            color: blue;
+            color: #200000;
             text-decoration: none;
           }
           .slick-image-gallery {
@@ -114,12 +115,13 @@ const TemplateWrapper = ({ children }) => {
           [mq[2]]: {
             width: "80%",
             minWidth: "1000px",
-            marginTop: 0
+            marginTop: 0,
           },
-          position: "relative"
+          position: "relative",
         }}
       >
         {children}
+        <Footer />
       </div>
     </div>
   );
