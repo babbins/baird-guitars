@@ -25,7 +25,7 @@ Image 2 - Jinx cover *
 
 Image 3 - [Black soap cover](https://mikelikesrap.bandcamp.com/album/black-soap) +
 
-Image 4 - Something I Made (cover painted by Clarrie Scholtz) *
+Image 4 - [Something I Made](https://nicholasjohn.bandcamp.com/album/something-i-made-2) (cover painted by Clarrie Scholtz) *
 
 image 5 - [Small Steps cover](https://maxbuckland.bandcamp.com/) *
 
