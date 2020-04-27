@@ -16,12 +16,13 @@ const Footer = () => {
     <footer
       css={{
         width: "80%",
-        margin: "80px auto 40px auto",
+        margin: "80px auto 60px auto",
       }}
     >
       <hr
         css={{
           border: "2px solid #200000",
+          marginBottom: "5px",
         }}
       ></hr>
       <div

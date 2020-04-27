@@ -62,8 +62,8 @@ const Nav = ({ heading }) => {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 10px;
-        margin-right: 36px;
+        padding-left: 10px;
+        padding-right: 36px;
         z-index: 1;
         background-color: #fffaf0;
 

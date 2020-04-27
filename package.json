@@ -6,6 +6,8 @@
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.9",
     "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.27",
+    "@emotion/styled-base": "^10.0.31",
     "bulma": "^0.7.0",
     "gatsby": "^2.1.34",
     "gatsby-image": "^2.2.0",
@@ -18,6 +20,7 @@
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.7",
+    "gatsby-remark-embed-video": "^2.0.1",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-relative-images": "^0.2.1",
     "gatsby-source-filesystem": "^2.0.26",
@@ -55,6 +58,7 @@
     "build:lambda": "netlify-lambda build src/lambda",
     "build": "run-p build:**",
     "develop": "gatsby develop",
+    "dev-admin": "npx netlify-cms-proxy-server",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"

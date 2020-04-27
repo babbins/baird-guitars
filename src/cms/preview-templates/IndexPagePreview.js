@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
-
+  console.log(data);
   if (data) {
     return (
       <Layout>
@@ -19,9 +19,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
 IndexPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func
+    getIn: PropTypes.func,
   }),
-  getAsset: PropTypes.func
+  getAsset: PropTypes.func,
 };
 
 export default IndexPagePreview;

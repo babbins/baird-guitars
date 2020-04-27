@@ -21,6 +21,22 @@ const Div = styled.div`
 
   max-width: 850px;
   margin: 50px auto;
+
+  /* style markdown rendered embed videos */
+  .embedVideo-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    .embedVideo-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
 
 export const HTMLContent = ({ content, className }) => (

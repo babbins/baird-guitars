@@ -26,7 +26,6 @@ const TemplateWrapper = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap"
           rel="stylesheet"
         />
-        // Add the new slick-theme.css if you want the default styling
         <link
           rel="stylesheet"
           type="text/css"
@@ -99,11 +98,13 @@ const TemplateWrapper = ({ children }) => {
             margin: 0;
             padding: 0;
             font-family: "Courier Prime", monospace;
+            box-sizing: border-box;
           }
 
           body {
             background-color: #fffaf0;
             color: #200000;
+            overflow-x: hidden;
           }
         `}
       />
