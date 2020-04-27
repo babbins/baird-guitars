@@ -21,6 +21,7 @@ const Div = styled.div`
 
   a {
     text-decoration: underline;
+    color: #f94c2c;
   }
 
   max-width: 850px;

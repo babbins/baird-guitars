@@ -37,6 +37,8 @@ const Footer = () => {
           css={{
             fontFamily: "jinx",
             fontSize: "50px",
+            textDecoration: "none",
+            color: "#200 !important",
           }}
         >
           B

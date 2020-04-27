@@ -7,6 +7,7 @@ import Content, { HTMLContent } from "../components/Content";
 import ImageSlider from "../components/ImageSlider";
 import { css } from "@emotion/core";
 import mq from "../utils/mediaQueries";
+import { CustomPageTemplate } from "./custom-page.js";
 
 export const GuitarPageTemplate = ({
   title,
@@ -78,19 +79,26 @@ GuitarPageTemplate.propTypes = {
 
 const GuitarPage = ({ data }) => {
   const { markdownRemark: post } = data;
-
   return (
     <Layout>
       <Helmet titleTemplate="%s | Baird Guitars">
         <title>{`${post.frontmatter.title}`}</title>
         <meta name="description" content={`${post.frontmatter.description}`} />
       </Helmet>
-      <GuitarPageTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        guitarImages={post.frontmatter.guitarImages}
-      />
+      {post.frontmatter.guitarImages ? (
+        <GuitarPageTemplate
+          content={post.html}
+          contentComponent={HTMLContent}
+          title={post.frontmatter.title}
+          guitarImages={post.frontmatter.guitarImages}
+        />
+      ) : (
+        <CustomPageTemplate
+          content={post.html}
+          contentComponent={HTMLContent}
+          title={post.frontmatter.navTitle}
+        />
+      )}
     </Layout>
   );
 };

@@ -52,7 +52,7 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="mask-icon"
           href="/img/safari-pinned-tab.svg"
-          color="#ff4400"
+          color="#f94c2c;"
         />
         <meta name="theme-color" content="#fff" />
         <meta property="og:type" content="business.business" />
@@ -77,8 +77,8 @@ const TemplateWrapper = ({ children }) => {
           }
           a,
           a:visited {
-            color: #200000;
-            text-decoration: none;
+            color: #f94c2c;
+            text-decoration: underline;
           }
           .slick-image-gallery {
             position: static;

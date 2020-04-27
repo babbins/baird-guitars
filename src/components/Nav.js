@@ -11,8 +11,14 @@ export const NAV_HEIGHT = {
   DESKTOP: 90,
 };
 
+const HeaderLink = styled(Link)`
+  text-decoration: none;
+  color: #200 !important;
+`;
+
 const NavLink = styled(Link)`
   font-family: "jinx";
+  text-decoration: none;
   color: white !important;
   font-weight: 300;
   font-size: 40px;
@@ -72,7 +78,7 @@ const Nav = ({ heading }) => {
       `}
       id={MENU_CONTAINER}
     >
-      <Link to="/">
+      <HeaderLink to="/">
         <h1
           css={css`
             font-family: "jinx";
@@ -92,7 +98,7 @@ const Nav = ({ heading }) => {
         >
           {heading}
         </h1>
-      </Link>
+      </HeaderLink>
 
       {size.width < breakpoints[2] ? (
         <Menu
