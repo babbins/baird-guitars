@@ -5,7 +5,6 @@ import styled from "@emotion/styled";
 
 const ContactLink = styled.a`
   display: block;
-  color: #200000;
   font-size: 16px;
   margin-bottom: 5px;
   text-decoration: underline;
@@ -21,7 +20,7 @@ const Footer = () => {
     >
       <hr
         css={{
-          border: "2px solid #200000",
+          border: "2px solid #200",
           marginBottom: "5px",
         }}
       ></hr>

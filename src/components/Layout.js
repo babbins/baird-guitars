@@ -104,13 +104,13 @@ const TemplateWrapper = ({ children }) => {
 
           body {
             background-color: #fffaf0;
-            color: #200000;
+            color: #200;
             overflow-x: hidden;
           }
           /*
-            This will hide the focus indicator if the element receives focus via the mouse,
-            but it will still show up on keyboard focus.
-          */
+          This will hide the focus indicator if the element receives focus via the mouse,
+          but it will still show up on keyboard focus.
+        */
           .js-focus-visible :focus:not(.focus-visible) {
             outline: none;
           }

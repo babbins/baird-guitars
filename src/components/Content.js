@@ -19,6 +19,10 @@ const Div = styled.div`
     margin-left: 30px;
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   max-width: 850px;
   margin: 50px auto;
 

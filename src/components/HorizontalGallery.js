@@ -11,7 +11,6 @@ const GalleryImage = ({ image, className }) => (
 const ContactLink = styled.a`
   display: block;
   margin-bottom: 10px;
-  color: #200000;
   text-decoration: underline;
 `;
 
@@ -47,7 +46,7 @@ const HorizontalGallery = ({ galleryItems }) => (
       {galleryItems.map(({ image, url, name, description }) => {
         return (
           <div css={GalleryItemCss} key={image.childImageSharp.fluid.src}>
-            <Link to={url} css={{ color: "#200000 !important" }}>
+            <Link to={url} css={{ color: "#200 !important" }}>
               <h3>{name}</h3>
               <GalleryImage
                 css={{

@@ -8,7 +8,7 @@ const styles = {
     justifySelf: "flex-end",
   },
   bmBurgerBars: {
-    background: "#200000",
+    background: "#200",
   },
   bmBurgerBarsHover: {
     background: "#a90000",
@@ -26,7 +26,7 @@ const styles = {
     height: "100%",
   },
   bmMenu: {
-    background: "#200000",
+    background: "#200",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },

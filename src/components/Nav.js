@@ -19,7 +19,6 @@ const NavLink = styled(Link)`
   display: block;
   ${mq[2]} {
     font-size: 25px;
-    color: #200000 !important;
   }
 `;
 
@@ -80,7 +79,6 @@ const Nav = ({ heading }) => {
             font-weight: 300;
             font-size: 60px;
             line-height: 1;
-            color: #200000 !important;
             ${mq[0]} {
               font-size: 6.5vw;
               justify-self: center;
