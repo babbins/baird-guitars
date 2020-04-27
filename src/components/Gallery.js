@@ -10,8 +10,8 @@ const GalleryImage = ({ image, className }) => (
 const GalleryItemCss = {
   width: "33%",
   [mq[0]]: {
-    width: "25%"
-  }
+    width: "25%",
+  },
 };
 
 const Gallery = ({ galleryItems }) => (
@@ -20,7 +20,9 @@ const Gallery = ({ galleryItems }) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      flexWrap: "wrap"
+      flexWrap: "wrap",
+      margin: "0 auto",
+      width: "90%",
     }}
   >
     {galleryItems.map(({ image, url }) => {

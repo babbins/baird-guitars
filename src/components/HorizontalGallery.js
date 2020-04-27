@@ -15,6 +15,10 @@ const ContactLink = styled.a`
   text-decoration: underline;
 `;
 
+const MainImage = styled(Img)`
+  max-width: 250px;
+`;
+
 const GalleryItemCss = {
   display: "block",
   width: "100%",

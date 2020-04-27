@@ -3,9 +3,8 @@ import Slider from "react-slick";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import mq from "../utils/mediaQueries";
-import Lightbox from 'react-image-lightbox';
+import Lightbox from "react-image-lightbox";
 import Img from "gatsby-image";
-
 
 const ImageSlider = ({ images, className }) => {
   const [isOpenLightbox, setIsOpenLightbox] = React.useState(false);
@@ -17,7 +16,7 @@ const ImageSlider = ({ images, className }) => {
     speed: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
-    customPaging: function (i) {
+    customPaging: function(i) {
       return (
         <a>
           <Img
@@ -29,21 +28,26 @@ const ImageSlider = ({ images, className }) => {
           />
         </a>
       );
-    }
+    },
   };
 
   return (
-    <div className={className}>
-
+    <div
+      className={className}
+      css={css`
+        ${mq[2]} {
+          width: 80%;
+          margin: 0 auto;
+        }
+      `}
+    >
       <Slider {...settings}>
-        {images.map(image => (
+        {images.map((image) => (
           <div
             css={css`
-              width: 100%;
               cursor: pointer;
             `}
             onClick={() => {
-              console.log('clicked')
               setCurrentImage(image.childImageSharp.fluid.src);
               setIsOpenLightbox(true);
             }}

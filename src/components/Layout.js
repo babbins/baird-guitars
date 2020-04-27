@@ -6,6 +6,7 @@ import Nav, { NAV_HEIGHT } from "./Nav.js";
 import mq from "../utils/mediaQueries";
 import "react-image-lightbox/style.css";
 import Footer from "./Footer";
+import "focus-visible/dist/focus-visible.min.js";
 
 const { Global, css } = emotion;
 
@@ -106,6 +107,13 @@ const TemplateWrapper = ({ children }) => {
             color: #200000;
             overflow-x: hidden;
           }
+          /*
+            This will hide the focus indicator if the element receives focus via the mouse,
+            but it will still show up on keyboard focus.
+          */
+          .js-focus-visible :focus:not(.focus-visible) {
+            outline: none;
+          }
         `}
       />
       <Nav heading="BAIRD GUITARS" />
@@ -113,9 +121,9 @@ const TemplateWrapper = ({ children }) => {
         css={{
           margin: "0 auto",
           marginTop: NAV_HEIGHT.MOBILE + 10 + "px",
-          [mq[2]]: {
+          [mq[1]]: {
             width: "80%",
-            minWidth: "1000px",
+            minWidth: "800px",
             marginTop: 0,
           },
           position: "relative",

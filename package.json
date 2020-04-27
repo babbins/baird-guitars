@@ -9,6 +9,7 @@
     "@emotion/styled": "^10.0.27",
     "@emotion/styled-base": "^10.0.31",
     "bulma": "^0.7.0",
+    "focus-visible": "^5.1.0",
     "gatsby": "^2.1.34",
     "gatsby-image": "^2.2.0",
     "gatsby-plugin-emotion": "^4.1.0",
