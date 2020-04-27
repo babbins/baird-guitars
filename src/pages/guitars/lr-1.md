@@ -24,4 +24,4 @@ Chambered solid body electric built for Lila Ramani of [Crumb](https://www.crumb
 * Rosewood fingerboard on a maple neck
 * hand cut brass and aluminum pick guards
 
-`youtube:https://www.youtube.com/watch?v=F1uG1pDd8QE`
+`youtube: https://www.youtube.com/watch?v=94jSIcxXI-o`
