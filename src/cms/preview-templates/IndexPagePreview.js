@@ -5,7 +5,6 @@ import Layout from "../../components/Layout";
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
-  console.log(data);
   if (data) {
     return (
       <Layout>

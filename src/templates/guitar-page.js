@@ -15,7 +15,6 @@ export const GuitarPageTemplate = ({
   contentComponent,
   guitarImages,
 }) => {
-  console.log(content);
   const PostContent = contentComponent || Content;
 
   return (

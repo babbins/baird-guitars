@@ -18,6 +18,7 @@ const HeaderLink = styled(Link)`
 
 const NavLink = styled(Link)`
   font-family: "jinx";
+  color: #fffaf0;
   text-decoration: none;
   color: white !important;
   font-weight: 300;
@@ -25,6 +26,7 @@ const NavLink = styled(Link)`
   display: block;
   ${mq[2]} {
     font-size: 25px;
+    color: #200 !important;
   }
 `;
 
@@ -110,10 +112,10 @@ const Nav = ({ heading }) => {
           outerContainerId={MENU_CONTAINER}
           pageWrapId="page-wrap"
         >
-          <NavLink onClick={closeMenu} key="gallery" to="/">
+          <NavLink onClick={closeMenu} to="/">
             GUITARS
           </NavLink>
-          <NavLink onClick={closeMenu} key="gallery" to="/for-sale">
+          <NavLink onClick={closeMenu} to="/for-sale">
             FOR SALE
           </NavLink>
           <NavItems items={navItems} handleClick={closeMenu} />
@@ -128,10 +130,10 @@ const Nav = ({ heading }) => {
             }
           `}
         >
-          <NavLink onClick={closeMenu} key="gallery" to="/">
+          <NavLink onClick={closeMenu} to="/">
             GUITARS
           </NavLink>
-          <NavLink onClick={closeMenu} key="gallery" to="/for-sale">
+          <NavLink onClick={closeMenu} to="/for-sale">
             FOR SALE
           </NavLink>
           <NavItems handleClick={closeMenu} items={navItems} />
@@ -144,7 +146,7 @@ const Nav = ({ heading }) => {
 const NavItems = ({ items, handleClick }) => (
   <>
     {items.map(({ navTitle, slug }) => (
-      <NavLink onClick={handleClick} key={slug} to={`/${slug}`}>
+      <NavLink onClick={handleClick} key={navTitle} to={`/${slug}`}>
         {navTitle.toUpperCase()}
       </NavLink>
     ))}
