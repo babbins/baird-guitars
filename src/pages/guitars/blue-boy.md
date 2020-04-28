@@ -17,7 +17,7 @@ guitarImages:
 
 Hollow body electric fretless
 
-A light-weight hollow body electric bass. Although it is shaped and carved like a solid body electric it is loud enough for the player to hear it and enjoy its sound practice unplugged.
+A light-weight hollow body electric bass. Although it is shaped and carved like a solid body electric it is loud enough for the player to hear it and enjoy its sound, and practice unplugged.
 
 * Shielded hand wound single coil with hum canceling dummy coil
 * 34" scale
