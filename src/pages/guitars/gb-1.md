@@ -22,7 +22,7 @@ guitarImages:
 ---
 ## Hollow-body Electric Jazz
 
-A fully hollow-body guitar made to have the feel and look of a modern solid body electric, but the sound of a hollow jazz style guitar. The exposed neck block allows for the body to be carved like a solid body so the player can reach the higher frets. the top and back are curved, which means the body becomes thinner the further you get away from the center line of the body. The bridge is hollowed out from the back like a gypsy guitar.
+A fully hollow-body guitar made to have the feel and look of a modern solid body electric, but the sound of a hollow jazz style guitar. The exposed neck block allows for the body to be carved like a solid body so the player can reach the higher frets. the top and back are curved, which means the body becomes thinner the further you get away from the center line of the instrument. The bridge is hollowed out from the back like a gypsy guitar.
 
 * Hand wound shielded hum-bucker
 * Volume, tone, and a series/parallel switch
