@@ -56,7 +56,7 @@ const Footer = () => {
             bairdguitars@gmail.com
           </ContactLink>
           <ContactLink href="tel:718-344-8587">718-344-8587</ContactLink>
-          <a href="https://instagram.com/byurrt">
+          <a href="https://instagram.com/bairdguitars">
             <Instagram width="30px" />
           </a>
         </div>
